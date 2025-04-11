@@ -6,11 +6,13 @@ import Socials from '../components/Socials/Socials.vue';
 
 <template>
     <section class="side-bar">
-        <InfoHeader 
-            name="Louie Gayao" 
-            title="Web Developer"
-            description="some decription about what i do - marketing tagline"/>
-        <Navigation/>
+        <div class="side-bar__info">
+            <InfoHeader 
+                name="Louie Gayao" 
+                title="Web Developer"
+                description="some decription about what i do - marketing tagline"/>
+            <Navigation/>
+        </div>
         <Socials/>
     </section>
 </template>
@@ -20,5 +22,14 @@ import Socials from '../components/Socials/Socials.vue';
         padding: 6rem 0;
         max-width: 35rem;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__info{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20%;
+        }
     }
 </style>
