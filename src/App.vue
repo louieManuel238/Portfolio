@@ -1,14 +1,9 @@
 <script setup>
-import InfoHeader from './components/InfoHeader.vue'
-import Navigation from './components/Navigation/Navigation.vue';
+import NavigationSection from './pages/NavigationSection.vue';
 </script>
 
 <template>
-   <InfoHeader 
-    name="Louie Gayao" 
-    title="Web Developer"
-    description="some decription about what i do - marketing tagline"/>
-  <Navigation/>
+  <NavigationSection/>
 </template>
 
 <style scoped>
