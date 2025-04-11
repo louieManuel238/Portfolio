@@ -1,11 +1,14 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import InfoHeader from './components/InfoHeader.vue'
 import Navigation from './components/Navigation/Navigation.vue';
 </script>
 
 <template>
+   <InfoHeader 
+    name="Louie Gayao" 
+    title="Web Developer"
+    description="some decription about what i do - marketing tagline"/>
   <Navigation/>
-  <HelloWorld msg="Louie Gayao" />
 </template>
 
 <style scoped>
