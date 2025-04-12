@@ -25,10 +25,17 @@ export default {
 </ul>
 </template>
 <style lang="scss" scoped>
+@import '../../styles/partials/mixins';
 .social-list{
     width: 100%;
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
+    &__item{
+        width: 2rem;
+        @include desktop{
+            width: 1.5rem;
+        }
+    }
 }
 </style>

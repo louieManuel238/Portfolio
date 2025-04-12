@@ -13,11 +13,11 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item"
-                :class="{active: isActive === index}"
-                @click="isActive = index"
             v-for="(nav, index) in navList">
                 <a class="nav__link"
                     :href="nav.section"
+                    :class="{active: isActive === index}"
+                    @click="isActive = index"
                 >{{nav.title}}</a>
             </li>
         </ul>
@@ -25,18 +25,23 @@
 </template>
 <style lang="scss" scoped>
     .active{
-        font-size: 1.5rem;
-        margin-left: 2rem;
+        font-size: 1.75rem;
+        padding-left: 2rem;
     }
     .nav{
+        font-size: 1.25rem;
         &__list-item{
             display: flex;
             height: 36px;
             align-items: center;
+        }
+        &__link{
+            width: 100%;
             &:hover{
-                font-size: 1.5rem;
+                font-size: 1.75rem;
                 &:not(.active) {
                     padding-left: 2rem;
+                    transition: padding-left 0.3s ease-in-out;
                 }
             }
         }

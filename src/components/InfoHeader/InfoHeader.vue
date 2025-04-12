@@ -17,6 +17,10 @@ defineProps({
 </div>
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.personal-info{
+  &__name{
+    font-size: 3rem;
+  }
+}
 </style>
