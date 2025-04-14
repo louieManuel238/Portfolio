@@ -7,7 +7,3 @@ import MainSection from './pages/MainSection.vue';
   <NavigationSection/>
   <MainSection/>
 </template>
-
-<style scoped>
-
-</style>

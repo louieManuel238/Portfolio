@@ -1,0 +1,19 @@
+{
+    "name": "Louie Gayao",
+    "title": "Web Developer",
+    "description": "some description about what I do - marketing tagline",
+    "projects": [
+        {
+            "title": "Project 1",
+            "tech": ["Javascript", "React.js", "Express.js", "Git"],
+            "description": "Project description",
+            "img": ""
+        },
+        {
+            "title": "Project 2",
+            "tech": ["Javascript", "React.js", "Express.js", "Git"],
+            "description": "Project description",
+            "img": ""
+        }
+    ]
+}

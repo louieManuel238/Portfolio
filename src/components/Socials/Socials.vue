@@ -1,13 +1,6 @@
-<script>
+<script setup>
 import LinkedIn from './LinkedIn.vue';
 import GitHub from './GitHub.vue';
-
-export default {
-  components: {
-    LinkedIn,
-    GitHub
-  },
-};
 </script>
 <template>
 <ul aria-label="social media"

@@ -10,12 +10,8 @@ const { width } = useWindowSize();
 <template>
     <section class="side-bar">
         <div class="side-bar__info">
-            <InfoHeader 
-                name="Louie Gayao" 
-                title="Web Developer"
-                description="some decription about what i do - marketing tagline"/>
-
-            <Navigation v-if="width > 1279"/>
+            <InfoHeader/>
+            <Navigation v-if="width > 1023"/>
         </div>
         <Socials/>
     </section>

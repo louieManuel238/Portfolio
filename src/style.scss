@@ -28,6 +28,7 @@ body {
   }
   @include desktop{
     padding: 0 3rem;
+    display: flex;
   }
 }
 
