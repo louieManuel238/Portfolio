@@ -4,16 +4,29 @@
     "description": "some description about what I do - marketing tagline",
     "projects": [
         {
-            "title": "Project 1",
-            "tech": ["Javascript", "React.js", "Express.js", "Git"],
-            "description": "Project description",
-            "img": ""
+            "title": "Traveler's Guide",
+            "tech": ["Javascript", "React.js", "Express.js", "Git", "Azure", "Google API", "GeminiAI"],
+            "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
+            "img": "src/assets/projects/CapstoneProject.svg"
         },
         {
-            "title": "Project 2",
-            "tech": ["Javascript", "React.js", "Express.js", "Git"],
+            "title": "Snaps",
+            "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git"],
             "description": "Project description",
-            "img": ""
+            "img": "src/assets/projects/Snaps.svg"
+        },
+        {
+            "title": "InStock",
+            "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git", "Figma", "Jira"],
+            "description": "Project description",
+            "img": "src/assets/projects/InStock.svg"
+        },
+        {
+            "title": "BandSite",
+            "tech": ["Javascript", "Scss", "HTML","Git"],
+            "description": "BandSite is a fully functional mockup website for the indie rock band Bees Knees, designed to connect with fans and promote their latest shows. The site features band information, tour dates, ticket purchasing options, and media content. With an aesthetic aligned with the band’s brand, it enhances their digital presence and audience engagement.",
+            "img": "src/assets/projects/BandSite.svg"
         }
+       
     ]
 }
