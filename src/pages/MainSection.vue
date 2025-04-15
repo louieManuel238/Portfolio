@@ -1,10 +1,11 @@
 <script setup>
+import Profile from '../components/Profile/Profile.vue';
 import Contact from '../components/Contact/Contact.vue';
 import Projects from '../components/Projects/Projects.vue';
 </script>
 <template>
 <section class="hero-section">
-    <h2>Profile</h2>
+    <Profile/>
     <Projects/>
     <Contact/>
 </section>
@@ -14,6 +15,9 @@ import Projects from '../components/Projects/Projects.vue';
 .hero-section{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     @include desktop{
         padding: 6rem 0 6rem 2rem;
         width: 70%;

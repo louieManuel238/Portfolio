@@ -22,6 +22,5 @@ const Projects = ref(projects);
 .project-list{
     display: flex;
     flex-direction: column;
-    padding: 0 .5rem;
 }
 </style>
