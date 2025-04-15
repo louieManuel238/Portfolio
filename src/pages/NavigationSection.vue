@@ -32,7 +32,10 @@ const { width } = useWindowSize();
         @include desktop{
             padding: 6rem 0;
             max-width: 35rem;
-            height: 100vh;
+            max-height: 100vh;
+            position: sticky;
+            top: 0;
+            
         }
         &__info{
                 height: 100%;

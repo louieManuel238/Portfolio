@@ -3,7 +3,6 @@ const props = defineProps({
     data: Object
 })
 const {title, description, tech, img} = props.data;
-console.log(img)
 </script>
 <template>
 <div class="project-card">
@@ -25,15 +24,16 @@ console.log(img)
 </template>
 <style lang="scss" scoped>
 @import '../../styles/partials/mixins'; 
+@import '../../styles/partials/variables';
 .project-card{
     margin: .75rem 0;
-
+    border-radius: 20px;
+    padding: .5rem;
+    cursor: pointer;
     &:hover{
             background: #BDC3C725;
+            color: #00C2CB;
         }
-    @include large-mobile{
-        margin: 2rem 0;
-    }
     &__contents{
         padding: .45rem;
         border-radius: 10px;
@@ -74,5 +74,12 @@ console.log(img)
         background: #00C2CB20;
         
     }
+}
+.text-title{
+    font-size: 1rem;
+}
+.text-description{
+    font-size: $text-sub-font;
+    color: $text-sub-color;
 }
 </style>

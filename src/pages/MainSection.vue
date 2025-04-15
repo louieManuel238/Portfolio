@@ -15,7 +15,9 @@ import Projects from '../components/Projects/Projects.vue';
     height: 100%;
     width: 100%;
     @include desktop{
-        padding: 6rem 2rem;
+        padding: 6rem 0 6rem 2rem;
+        width: 70%;
+        margin: auto;
     }
 }
 </style>

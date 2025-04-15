@@ -28,6 +28,7 @@ const submit = () => {
 </template>
 <style lang="scss" scoped>
 .contact{
+    padding: 0 1rem;
     &__label{
         width: 100%;
     }
