@@ -21,7 +21,7 @@ import data from '../../data/data.json';
     font-size: 1.125rem;
   }
   &__description{
-    font-size: $text-sub-font;
+    font-size: 1rem;
     color: $text-sub-color;
   }
 }
