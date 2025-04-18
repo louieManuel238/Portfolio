@@ -2,11 +2,13 @@
 import Profile from '../components/Profile/Profile.vue';
 import Contact from '../components/Contact/Contact.vue';
 import Projects from '../components/Projects/Projects.vue';
+import WorkExperience from '../components/WorkExperience/WorkExperience.vue';
 </script>
 <template>
 <section class="hero-section">
     <Profile/>
     <Projects/>
+    <WorkExperience/>
     <Contact/>
 </section>
 </template>
