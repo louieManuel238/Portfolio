@@ -1,12 +1,16 @@
 <script setup>
-    import { ref } from 'vue';
+    import { ref, inject, watch } from 'vue';
     const navList = ref([
-        {title:"Profile", section:"#profile"},
-        {title:"Projects", section:"#projects"},
-        {title:"Work Experience", section:"#experience"},
-        {title:"Contact", section:"#contact"},
+        {title:"Profile", section:"#profile-section"},
+        {title:"Projects", section:"#projects-section"},
+        {title:"Work Experience", section:"#work-section"},
+        {title:"Contact", section:"#contact-section"},
     ])
     const isActive = ref(false);
+    const visible = inject('visibleSection')
+    watch(visible, ()=>{
+        isActive.value=visible.value
+    })
 
 </script>
 <template>

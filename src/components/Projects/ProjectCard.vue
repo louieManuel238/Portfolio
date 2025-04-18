@@ -71,6 +71,7 @@ const {title, description, tech, img} = props.data;
         border-radius: 10px;
         color: #07cfda;
         font-weight: 700;
+        font-size: 12px;
         background: #00C2CB20;
         
     }

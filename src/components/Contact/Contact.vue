@@ -1,6 +1,20 @@
 <script setup>
-import {ref} from 'vue';
 import Socials from '../Socials/Socials.vue';
+import {ref, useTemplateRef, inject, watch} from 'vue';
+import { useElementVisibility, useWindowScroll } from '@vueuse/core';
+
+const sectionRef = useTemplateRef('contactRef');
+const sectionVisibility = useElementVisibility(sectionRef)
+const visibleSection = inject('visibleSection')
+const {y} = useWindowScroll();
+
+watch(sectionVisibility, ()=>{
+    if(sectionVisibility.value==true) visibleSection.value=3;
+})
+watch(y,()=>{
+    console.log(y.value)
+    if(y>1880) visibleSection.value=3;
+})
 const form = ref({
     name:'',
     email:'',
@@ -12,7 +26,7 @@ const submit = () => {
 }
 </script>
 <template>
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section" ref="contactRef">
         <h2>Connect with me</h2>
         <Socials/>
         <form class="contact">
@@ -27,6 +41,7 @@ const submit = () => {
     </section>
 </template>
 <style lang="scss" scoped>
+#ll{float: left; position: absolute; left: 0}
 .contact{
     padding: 0 1rem;
     &__label{
