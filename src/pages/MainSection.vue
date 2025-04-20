@@ -19,11 +19,12 @@ import WorkExperience from '../components/WorkExperience/WorkExperience.vue';
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     @include desktop{
         padding: 6rem 0 6rem 2rem;
         width: 70%;
         margin: auto;
+        gap: 128px;
     }
 }
 </style>

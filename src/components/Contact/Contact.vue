@@ -8,12 +8,11 @@ const sectionVisibility = useElementVisibility(sectionRef)
 const visibleSection = inject('visibleSection')
 const {y} = useWindowScroll();
 
-watch(sectionVisibility, ()=>{
-    if(sectionVisibility.value==true) visibleSection.value=3;
-})
+// watch(sectionVisibility, ()=>{
+//     if(sectionVisibility.value==true) visibleSection.value=3;
+// })
 watch(y,()=>{
-    console.log(y.value)
-    if(y>1880) visibleSection.value=3;
+    if(y.value>2000) visibleSection.value=3;
 })
 const form = ref({
     name:'',
