@@ -7,17 +7,17 @@ import Email from './Email.vue';
 <ul aria-label="social media"
     class="social-list">
     <li class="social-list__item">
-        <a aria-label="LinkedIn (opens in a new tab)" title="LinkedIn" target="_blank" href="#">
+        <a aria-label="LinkedIn (opens in a new tab)" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/louiegayao/">
             <LinkedIn />
         </a>
     </li>
     <li class="social-list__item">
-        <a aria-label="GitHub (opens in a new tab)" title="LinkedIn" target="_blank" href="#">
+        <a aria-label="GitHub (opens in a new tab)" title="LinkedIn" target="_blank" href="https://github.com/louieManuel238">
             <GitHub />
         </a>
     </li>
     <li class="social-list__item">
-        <a aria-label="Email (opens email app)" title="Email" target="_blank" href="#">
+        <a aria-label="Email (opens email app)" title="Email" target="_blank" href="mailto:manuel.gayao@outlook.com">
             <Email />
         </a>
     </li>
