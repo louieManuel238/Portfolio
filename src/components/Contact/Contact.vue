@@ -3,8 +3,8 @@ import Socials from '../Socials/Socials.vue';
 import {ref, useTemplateRef, inject, watch} from 'vue';
 import { useElementVisibility, useWindowScroll } from '@vueuse/core';
 
-const sectionRef = useTemplateRef('contactRef');
-const sectionVisibility = useElementVisibility(sectionRef)
+// const sectionRef = useTemplateRef('contactRef');
+// const sectionVisibility = useElementVisibility(sectionRef)
 const visibleSection = inject('visibleSection')
 const {y} = useWindowScroll();
 

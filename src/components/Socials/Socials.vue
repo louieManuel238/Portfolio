@@ -1,6 +1,7 @@
 <script setup>
 import LinkedIn from './LinkedIn.vue';
 import GitHub from './GitHub.vue';
+import Email from './Email.vue';
 </script>
 <template>
 <ul aria-label="social media"
@@ -13,6 +14,11 @@ import GitHub from './GitHub.vue';
     <li class="social-list__item">
         <a aria-label="GitHub (opens in a new tab)" title="LinkedIn" target="_blank" href="#">
             <GitHub />
+        </a>
+    </li>
+    <li class="social-list__item">
+        <a aria-label="Email (opens email app)" title="Email" target="_blank" href="#">
+            <Email />
         </a>
     </li>
 </ul>
