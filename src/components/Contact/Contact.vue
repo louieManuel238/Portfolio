@@ -55,7 +55,6 @@ const submit = (e) => {
     </section>
 </template>
 <style lang="scss" scoped>
-#ll{float: left; position: absolute; left: 0}
 .contact{
     display: flex;
     flex-direction: column;

@@ -32,6 +32,7 @@
     .active{
         font-size: 1.75rem;
         padding-left: 2rem;
+        transition: padding-left 0.2s ease-in-out;
     }
     .nav{
         font-size: 1.25rem;
@@ -46,7 +47,7 @@
                 font-size: 1.75rem;
                 &:not(.active) {
                     padding-left: 2rem;
-                    transition: padding-left 0.3s ease-in-out;
+                    transition: padding-left 0.2s ease-in-out;
                 }
             }
         }
