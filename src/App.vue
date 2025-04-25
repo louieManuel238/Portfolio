@@ -1,13 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Navigation from './components/Navigation/Navigation.vue';
+import NavigationSection from './pages/NavigationSection.vue';
+import MainSection from './pages/MainSection.vue';
+import { provide, ref} from 'vue';
+
+const visibleSection = ref('Profile');
+provide('visibleSection', visibleSection);
 </script>
 
 <template>
-  <Navigation/>
-  <HelloWorld msg="Louie Gayao" />
+  <NavigationSection/>
+  <MainSection/>
 </template>
-
-<style scoped>
-
-</style>

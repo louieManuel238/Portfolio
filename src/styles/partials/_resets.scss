@@ -8,6 +8,7 @@
 html {
     font-size: 1rem;
     font-family: "Titillium Web", sans-serif;
+    scroll-behavior: smooth;
 }
 ul,
 ol,
@@ -31,4 +32,8 @@ button {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+h2{
+    font-size: 18px;
 }
