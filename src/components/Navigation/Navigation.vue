@@ -26,6 +26,7 @@
             </li>
         </ul>
     </nav>
+    
 </template>
 <style lang="scss" scoped>
     .active{

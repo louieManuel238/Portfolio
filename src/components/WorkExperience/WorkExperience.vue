@@ -13,8 +13,10 @@ watch(y,()=>{
 const work = data.work
 </script>
 <template>
-    <section class="work-section" id="work-section" ref="workRef">
-        <h2>Work Experience</h2>
+    <section class="work-section" aria-label="Work Experiences" id="work-section" ref="workRef">
+        <div class="section-header">
+            <h2>Experience</h2>
+        </div>
         <div class="work-list">
             <div v-for="item in work"
             class="work-item">

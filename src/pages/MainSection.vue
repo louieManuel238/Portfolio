@@ -12,7 +12,7 @@ import WorkExperience from '../components/WorkExperience/WorkExperience.vue';
     <Contact/>
 </section>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../styles/partials/mixins';
 .hero-section{
     height: 100%;
@@ -25,6 +25,17 @@ import WorkExperience from '../components/WorkExperience/WorkExperience.vue';
         width: 70%;
         margin: auto;
         gap: 128px;
+    }
+}
+.section-header{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    backdrop-filter: blur(20px);
+    padding: 1rem;
+    margin-left: -1rem;
+    @include desktop{
+        position: relative;
     }
 }
 </style>

@@ -13,8 +13,10 @@ watch(y,()=>{
 })
 </script>
 <template>
-    <section class="projects-section" id="projects-section" ref="projectRef">
-        <h2>Featured Projects</h2>
+    <section class="projects-section" aria-label="Featured Project" id="projects-section" ref="projectRef">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+        </div>
         <div class="project-list">
             <div v-for="project in projects"
             class="project-item">

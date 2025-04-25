@@ -13,8 +13,10 @@ watch(y,()=>{
 const {profile} = data;
 </script>
 <template>
-    <section class="profile-section" id="profile-section" ref="profileRef">
-        <h2>Profile</h2>
+    <section class="profile-section" aria-label="About Me" id="profile-section" ref="profileRef">
+        <div class="section-header">
+            <h2>Profile</h2>
+        </div>
         <p class="profile-text">{{ profile }}</p>
     </section>
 </template>
