@@ -14,7 +14,7 @@
 
 </script>
 <template>
-    <nav class="nav">
+    <nav class="nav" aria-label="In-page jump links">
         <ul class="nav__list">
             <li class="nav__list-item"
             v-for="(nav, index) in navList">

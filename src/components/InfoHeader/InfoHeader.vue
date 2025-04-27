@@ -1,33 +1,23 @@
 <script setup>
-import JSONdata from '../../data/data.json';
 import { ref, watchEffect } from 'vue';
-import axios from 'axios';
+import apiCaller from '../../data/api';
 
-const BASE_URL = import.meta.env.VITE_SERVER_BASE_URL;
-const PORT = import.meta.env.VITE_SERVER_PORT;
 const data = ref();
-
-watchEffect(()=>{
-  const getUser = async ()=>{
-    try {
-      const response = await axios.get(`${BASE_URL}:${PORT}/user/1`);
-      data.value = response.data;
-    }catch(error){
-
-    }
-  }
-  getUser()
+const api = new apiCaller();
+watchEffect(async()=>{
+  data.value = await api.getUser();
 })
-
 
 </script>
 
 <template>
-<div class="personal-info">
-  <h1 class="personal-info__name">{{`${data?.first_name} ${data?.last_name}` || JSONdata.name}}</h1>
-  <h2 class="personal-info__title text-title">{{  data?.title || JSONdata.title}}</h2>
-  <p class="personal-info__description text-description">{{  data?.tagline || JSONdata.tagline}}</p>
-</div>
+<header class="personal-info" aria-label="Personal Infromation">
+  <h1 class="personal-info__name">
+    <a href="/">{{`${data?.first_name} ${data?.last_name}`}} </a>
+  </h1>
+  <h2 class="personal-info__title text-title">{{  data?.title}}</h2>
+  <p class="personal-info__description text-description">{{  data?.tagline}}</p>
+</header>
 </template>
 
 <style lang="scss" scoped>

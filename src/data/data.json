@@ -1,8 +1,9 @@
 {
-    "name": "Louie Gayao",
+    "first_name": "Louie",
+    "last_name": "Gayao",
     "title": "Web Developer",
-    "description": "I build impactful, user-friendly applications with modern, and thoughtful design.",
-    "profile": "I am a versatile professional with 5+ years of cross-industry experience in e-commerce development, IT, manufacturing, and hospitality. I am passionate about leveraging technology to create impactful applications with modern designs that enhance user interaction and simplify user experience. Known for my creativity, problem-solving skills, and lifelong learning approach, I’m excited to contribute to developing cutting-edge, user-centric applications.",
+    "tagline": "I build impactful, user-friendly applications with modern, and thoughtful design.",
+    "about": "I am a versatile professional with 5+ years of cross-industry experience in e-commerce development, IT, manufacturing, and hospitality. I am passionate about leveraging technology to create impactful applications with modern designs that enhance user interaction and simplify user experience. Known for my creativity, problem-solving skills, and lifelong learning approach, I’m excited to contribute to developing cutting-edge, user-centric applications.",
     "projects": [
         {
             "title": "Traveler's Guide",
