@@ -2,12 +2,12 @@
 const props = defineProps({
     data: Object
 })
-const {title, description, tech, date, company} = props.data;
+const {title, description, tech, start_date, end_date, company} = props.data;
 </script>
 <template>
 <div class="work-card">
     <div class="work-card__container">
-        <p class="work-date">{{ date }}</p>
+        <p class="work-date">{{ `${new Date(start_date).getFullYear()} - ${end_date ? new Date(end_date).getFullYear() : "present"}` }}</p>
         <div class="work-card__contents">
             <h3 class="text-title">{{title}} | {{ company }}</h3>
             <p class="text-description">{{ description }}</p>

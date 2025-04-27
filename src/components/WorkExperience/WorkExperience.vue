@@ -1,9 +1,10 @@
 <script setup>
 import data from '../../data/data.json';
 import WorkCard from './WorkCard.vue';
-import { inject, watch} from 'vue';
+import { inject, watch, watchEffect, ref} from 'vue';
 import { RouterLink } from 'vue-router';
 import { useWindowScroll } from '@vueuse/core';
+import apiCaller from '../../data/api';
 
 const visibleSection = inject('visibleSection')
 const {y} = useWindowScroll()
@@ -11,7 +12,12 @@ const {y} = useWindowScroll()
 watch(y,()=>{
     if(y.value>1320) visibleSection.value=2;
 })
-const work = data.work
+const work = ref();
+
+const api = new apiCaller();
+watchEffect(async()=>{
+    work.value = await api.getWorkExperience();
+})
 
 </script>
 <template>

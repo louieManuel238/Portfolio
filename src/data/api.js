@@ -16,6 +16,17 @@ class apiCaller{
             return { first_name, last_name, tagline, title, about };
         }   
     }
+
+    async getWorkExperience(){
+        try{
+            const response = await axios.get(`${this.BASE_URL}/works/1`);
+            return response.data;
+        }catch(error){
+            console.error("Error fetching user data:", error);
+            const { work } = JSONdata;
+            return work;
+        }
+    }
 }
 
 export default apiCaller;
