@@ -1,17 +1,27 @@
 <script setup>
-const props = defineProps({
+import { useRouteParams } from '@vueuse/router';
+import { ref, watchEffect } from 'vue';
+import { RouterLink } from 'vue-router';
+import apiCaller from '../data/api';
 
-});
+const id = useRouteParams('id');
+const data = ref();
+const api = new apiCaller();
+watchEffect(async()=>{
+    data.value = await api.getWorkExperienceByID(id.value);
+
+})
+
 </script>
 <template>
     <main>
         <header>
-            <button>back buton</button>
+            <RouterLink to="/">back buton</RouterLink>
         </header>
     <section>
-        <h1>Job titile</h1>
-        <h2>Company</h2>
-        <p>date</p>
+        <h1>{{data?.title}}</h1>
+        <h2>{{ data?.company }}</h2>
+        <p>{{ new Date(data?.start_date).getFullYear() }} - {{ new Date(data?.end_date).getFullYear() }}</p>
     </section>
     <section>
         <h2>Key Contributions</h2>
@@ -36,16 +46,7 @@ const props = defineProps({
     <section>
         <h2>Skills</h2>
         <ul>
-            <li>JavaScript (ES6+)</li>
-            <li>Vue.js</li>
-            <li>HTML5</li>
-            <li>CSS3/SCSS</li>
-            <li>Node.js</li>
-            <li>Git/GitHub</li>
-            <li>RESTful APIs</li>
-            <li>Webpack</li>
-            <li>Responsive Design</li>
-            <li>Agile Development</li>
+            <li v-for="skill of data?.tech">{{ skill  }}</li>
         </ul>
     </section>
 </main>

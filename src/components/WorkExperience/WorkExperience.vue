@@ -32,7 +32,20 @@ watchEffect(async()=>{
                 <WorkCard :data="item"/>
             </RouterLink>
             </div>
+            <span>
+                <a href="/Manuel%20Louie%20Gayao%20_%20Web%20Developer.pdf" target="_blank" class="view-all-link">
+                    View Full Resume
+                </a>
+            </span>
         </div>
     </section>
 </template>
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.view-all-link{
+    font-weight: 600;
+    &:hover{
+        color: #00C2CB;
+        transition: .25s 
+    }
+}
+</style>

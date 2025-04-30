@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard.vue';
 
 import {inject, watch} from 'vue';
 import { useWindowScroll  } from '@vueuse/core';
+import { RouterLink } from 'vue-router';
 
 const visibleSection = inject('visibleSection')
 const { y } = useWindowScroll();
@@ -23,7 +24,7 @@ watch(y,()=>{
                 <ProjectCard :data="project"/>
             </div>
         </div>
-        <a href="#">View All</a>
+        <RouterLink to="/">View All Projects</RouterLink>
     </section>
 
 </template>

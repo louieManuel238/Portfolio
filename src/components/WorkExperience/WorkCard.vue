@@ -53,14 +53,7 @@ const {title, description, tech, start_date, end_date, company} = props.data;
     gap: .5rem;
     flex-wrap: wrap;
     &__tag{
-        width: fit-content;
-        padding: 0 .25rem;
-        border: solid 1px #00C2CB;
-        border-radius: 10px;
-        color: #07cfda;
-        font-weight: 700;
-        font-size: 12px;
-        background: #00C2CB20;
+        @include tag;
         
     }
 }

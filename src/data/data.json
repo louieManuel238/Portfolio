@@ -40,15 +40,13 @@
             "tech": ["HTML", "CSS", "SCSS", "JavaScript", "BEM", "CMS", "BPM"],
             "keyResponsibilities": [
                 "Design, build, and maintain custom e-commerce stores using VarStreet CMS.",
-                "Implement scalable styling using BEM methodology and SCSS.",
-                "Create responsive multi-screen layouts and interactive UI with JavaScript.",
-                "Process customer orders and troubleshoot store issues.",
-                "Document standard procedures to improve workflow efficiency."
+                "process requests from the customer experience team, and order management team in maintaining product catalogs and product availability ",
+                "Process customer orders and troubleshoot store issues."
             ],
             "keyAccomplishments": [
-                "Modernized store interfaces with improved responsiveness and scalability.",
-                "Enhanced user interaction through JavaScript animations and transitions.",
-                "Streamlined internal workflows through better documentation and process optimization."
+                "Modernized store interfaces with improved responsiveness and scalability by implementing Block Element Modifier (BEM) methodology and SCSS .",
+                "Streamlined internal workflows and developed process documentation with business process modelling (BPM) and data flow diagram (DFD), and led process enhancement initiatives, significantly improving team efficiency in client support and cross-department collaboration",
+                "led integration updates with service providers "
             ]
         },
         {
@@ -59,13 +57,12 @@
             "description": "Streamlined warehouse asset retirement and disposal workflows by developing VBA macros and Python scripts, automating data entry and reporting tasks. Applied 5S principles to reorganize workspace and reduce operational waste, resulting in a 70% increase in warehouse productivity. Ensured secure data destruction and proper documentation of decommissioned IT assets.",
             "tech": ["VBA", "Python", "Excel", "5S", "Inventory Management"],
             "keyResponsibilities": [
-                "Manage asset retirement and disposal workflows.",
-                "Ensure secure data destruction and proper documentation of decommissioned IT assets.",
-                "Apply 5S principles to reorganize the warehouse workspace."
+                "Manage asset retirement and disposal of client contract devices.",
+                "Ensure secure data destruction and proper documentation of decommissioned IT assets."
             ],
             "keyAccomplishments": [
-                "Developed VBA macros and Python scripts to automate data entry and reporting.",
-                "Increased warehouse productivity by 70% through workspace reorganization.",
+                "Developed VBA macros and Python scripts to automate data entry and reporting, which incread productivity by 70%",
+                "Increased process capacity by 50% through workspace reorganization, updated process documentation, and maintained the warehouse through 5s practices ",
                 "Improved data security practices during IT asset decommissioning."
             ]
         },
@@ -83,9 +80,9 @@
                 "Contribute to UI/UX design improvements and testing."
             ],
             "keyAccomplishments": [
-                "Successfully launched a concentration game combining matching mechanics and quizzes.",
-                "Implemented seamless data retrieval and management through GraphQL and Neo4J.",
-                "Improved app usability and aesthetics through effective UI/UX enhancements."
+                " Successfully launched a concentration game combining matching mechanics and quizzes.",
+                "Led and coach teammates thorugh pair programming and mentorship",
+                ""
             ]
         },
         {
