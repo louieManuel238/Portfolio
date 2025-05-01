@@ -12,7 +12,7 @@ class apiCaller{
             return response.data;
         }catch(error){
             console.error("Error fetching user data:", error);
-            const { first_name, last_name, tagline, title } = JSONdata;
+            const { first_name, last_name, tagline, title, about } = JSONdata;
             return { first_name, last_name, tagline, title, about };
         }   
     }

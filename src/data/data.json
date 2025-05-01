@@ -9,13 +9,13 @@
             "title": "Traveler's Guide",
             "tech": ["React.js", "Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
             "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
-            "img": "src/assets/projects/CapstoneProject.svg"
+            "img": "/src/assets/projects/CapstoneProject.svg"
         },
         {
             "title": "Snaps",
             "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git"],
             "description": "A dynamic and user-friendly photo sharing web application that allows users to upload, organize, and share their favorite moments. Users can post photos, tag them with relevant keywords, and leave comments to engage with the community. Designed with a focus on social interaction and visual storytelling, Snaps promotes creativity and connection.",
-            "img": "src/assets/projects/Snaps.svg"
+            "img": "/src/assets/projects/Snaps.svg"
         },
         {
             "title": "InStock",
