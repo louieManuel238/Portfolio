@@ -33,8 +33,10 @@ const submit = (e) => {
 }
 </script>
 <template>
-    <section class="contact-section" id="contact-section" ref="contactRef">
-        <h2>Connect with me</h2>
+    <section class="contact-section" aria-label="Contact Me" id="contact-section" ref="contactRef">
+        <div class="section-header">
+            <h2>Connect With Me</h2>
+        </div>
         <Socials/>
         <form class="contact" @submit="handleSubmit">
             <label class="contact__label" for="full-name" :class="{focused: isFocusedName}">Full Name</label>
@@ -53,7 +55,6 @@ const submit = (e) => {
     </section>
 </template>
 <style lang="scss" scoped>
-#ll{float: left; position: absolute; left: 0}
 .contact{
     display: flex;
     flex-direction: column;

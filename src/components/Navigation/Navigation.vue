@@ -14,7 +14,7 @@
 
 </script>
 <template>
-    <nav class="nav">
+    <nav class="nav" aria-label="In-page jump links">
         <ul class="nav__list">
             <li class="nav__list-item"
             v-for="(nav, index) in navList">
@@ -26,11 +26,13 @@
             </li>
         </ul>
     </nav>
+    
 </template>
 <style lang="scss" scoped>
     .active{
         font-size: 1.75rem;
         padding-left: 2rem;
+        transition: padding-left 0.2s ease-in-out;
     }
     .nav{
         font-size: 1.25rem;
@@ -45,7 +47,7 @@
                 font-size: 1.75rem;
                 &:not(.active) {
                     padding-left: 2rem;
-                    transition: padding-left 0.3s ease-in-out;
+                    transition: padding-left 0.2s ease-in-out;
                 }
             }
         }

@@ -1,8 +1,9 @@
 {
-    "name": "Louie Gayao",
+    "first_name": "Louie",
+    "last_name": "Gayao",
     "title": "Web Developer",
-    "description": "I build impactful, user-friendly applications with modern, and thoughtful design.",
-    "profile": "I am a versatile professional with 5+ years of cross-industry experience in e-commerce development, IT, manufacturing, and hospitality. I am passionate about leveraging technology to create impactful applications with modern designs that enhance user interaction and simplify user experience. Known for my creativity, problem-solving skills, and lifelong learning approach, I’m excited to contribute to developing cutting-edge, user-centric applications.",
+    "tagline": "I build impactful, user-friendly applications with modern, and thoughtful design.",
+    "about": "I am a versatile professional with 5+ years of cross-industry experience in e-commerce development, IT, manufacturing, and hospitality. I am passionate about leveraging technology to create impactful applications with modern designs that enhance user interaction and simplify user experience. Known for my creativity, problem-solving skills, and lifelong learning approach, I’m excited to contribute to developing cutting-edge, user-centric applications.",
     "projects": [
         {
             "title": "Traveler's Guide",
@@ -31,39 +32,96 @@
     ],
     "work": [
         {
+            "id": 1,
             "date": "2022–Present",
             "title": "E-commerce Specialist",
             "company": "Microserve",
             "description": "Design, build, and maintain custom e-commerce stores using the VarStreet CMS. Modernized store interfaces by implementing BEM methodology and SCSS for scalable styling, responsive multi-screen layouts, and interactive UI using JavaScript, transitions, and animations. Process customer orders, troubleshoot store issues, and document standard procedures to streamline internal workflows and improve overall efficiency.",
-            "tech": ["HTML", "CSS", "SCSS", "JavaScript", "BEM", "CMS", "BPM"]
+            "tech": ["HTML", "CSS", "SCSS", "JavaScript", "BEM", "CMS", "BPM"],
+            "keyResponsibilities": [
+                "Design, build, and maintain custom e-commerce stores using VarStreet CMS.",
+                "process requests from the customer experience team, and order management team in maintaining product catalogs and product availability ",
+                "Process customer orders and troubleshoot store issues."
+            ],
+            "keyAccomplishments": [
+                "Modernized store interfaces with improved responsiveness and scalability by implementing Block Element Modifier (BEM) methodology and SCSS .",
+                "Streamlined internal workflows and developed process documentation with business process modelling (BPM) and data flow diagram (DFD), and led process enhancement initiatives, significantly improving team efficiency in client support and cross-department collaboration",
+                "led integration updates with service providers "
+            ]
         },
         {
+            "id": 2,
             "date": "2022",
             "title": "Asset Recovery Technician",
             "company": "Microserve",
             "description": "Streamlined warehouse asset retirement and disposal workflows by developing VBA macros and Python scripts, automating data entry and reporting tasks. Applied 5S principles to reorganize workspace and reduce operational waste, resulting in a 70% increase in warehouse productivity. Ensured secure data destruction and proper documentation of decommissioned IT assets.",
-            "tech": ["VBA", "Python", "Excel", "5S", "Inventory Management"]
+            "tech": ["VBA", "Python", "Excel", "5S", "Inventory Management"],
+            "keyResponsibilities": [
+                "Manage asset retirement and disposal of client contract devices.",
+                "Ensure secure data destruction and proper documentation of decommissioned IT assets."
+            ],
+            "keyAccomplishments": [
+                "Developed VBA macros and Python scripts to automate data entry and reporting, which incread productivity by 70%",
+                "Increased process capacity by 50% through workspace reorganization, updated process documentation, and maintained the warehouse through 5s practices ",
+                "Improved data security practices during IT asset decommissioning."
+            ]
         },
         {
+            "id": 3,
             "date": "2021",
             "title": "Developer Intern",
             "company": "unTribe",
             "description": "Developed an educational concentration game using React.js, where players match image pairs and answer dynamic quiz questions based on matched content. Integrated GraphQL with Apollo Client and Neo4J for managing and retrieving quiz data. Collaborated with a small team using Git for version control and contributed to UI/UX improvements and testing.",
-            "tech": ["React.js", "JavaScript", "GraphQL", "Apollo", "Neo4J", "Git"]
+            "tech": ["React.js", "JavaScript", "GraphQL", "Apollo", "Neo4J", "Git"],
+            "keyResponsibilities": [
+                "Develop an educational game using React.js.",
+                "Integrate GraphQL and Apollo Client with Neo4J for quiz data management.",
+                "Collaborate with a team using Git for version control.",
+                "Contribute to UI/UX design improvements and testing."
+            ],
+            "keyAccomplishments": [
+                " Successfully launched a concentration game combining matching mechanics and quizzes.",
+                "Led and coach teammates thorugh pair programming and mentorship",
+                ""
+            ]
         },
         {
+            "id": 4,
             "date": "2016–2017",
             "title": "Computer Programmer I",
             "company": "Local Government",
             "description": "Led end-to-end development of a full-stack Record Management System to digitize and manage internal documents and employee records. Built front-end forms using JSP and JavaScript, implemented backend logic in Java, and managed data using MySQL. Deployed and maintained the application on Windows Server 2013 with Apache HTTP Server.",
-            "tech": ["Java", "JSP", "JavaScript", "MySQL", "Windows Server 2013", "Apache HTTP Server"]
+            "tech": ["Java", "JSP", "JavaScript", "MySQL", "Windows Server 2013", "Apache HTTP Server"],
+            "keyResponsibilities": [
+                "Lead the development of a full-stack Record Management System.",
+                "Build front-end forms using JSP and JavaScript.",
+                "Develop backend services in Java and manage databases with MySQL.",
+                "Deploy and maintain applications on Windows Server 2013 with Apache HTTP Server."
+            ],
+            "keyAccomplishments": [
+                "Delivered a full-stack system that digitized internal document and employee record management.",
+                "Successfully deployed and maintained a stable application environment.",
+                "Streamlined internal record-keeping and improved data accessibility."
+            ]
         },
         {
+            "id": 5,
             "date": "2018–2022",
             "title": "Technical Operator",
             "company": "LogiCan Technologies Inc.",
             "description": "Operated and monitored Surface Mount Technology (SMT) production lines for electronics manufacturing. Maintained IT hardware, conducted routine inspections, and managed materials inventory to ensure smooth production flow. Supported process improvement initiatives and helped troubleshoot equipment and network issues as part of the technical team.",
-            "tech": ["SMT Equipment", "Inventory Management", "IT Support", "Hardware Maintenance"]
+            "tech": ["SMT Equipment", "Inventory Management", "IT Support", "Hardware Maintenance"],
+            "keyResponsibilities": [
+                "Operate and monitor Surface Mount Technology (SMT) production lines.",
+                "Perform IT hardware maintenance and routine inspections.",
+                "Manage materials inventory to ensure production continuity.",
+                "Support troubleshooting of technical and network-related issues."
+            ],
+            "keyAccomplishments": [
+                "Maintained consistent production flow with minimal downtime through effective inventory and equipment management.",
+                "Supported process improvement initiatives that enhanced operational efficiency.",
+                "Provided reliable technical support for hardware and network issues."
+            ]
         }
-    ]
+    ]    
 }
