@@ -9,7 +9,7 @@
             "title": "Traveler's Guide",
             "tech": ["React.js", "Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
             "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
-            "img": "/src/assets/projects/CapstoneProject.svg"
+            "img": "/CapstoneProject.svg"
         },
         {
             "title": "Snaps",
