@@ -9,9 +9,7 @@ const data = ref();
 const api = new apiCaller();
 watchEffect(async()=>{
     data.value = await api.getWorkExperienceByID(id.value);
-
 })
-
 </script>
 <template>
     <main>
