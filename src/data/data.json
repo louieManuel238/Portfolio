@@ -9,25 +9,25 @@
             "title": "Traveler's Guide",
             "tech": ["React.js", "Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
             "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
-            "img": "/CapstoneProject.svg"
+            "img": "/projects/CapstoneProject.svg"
         },
         {
             "title": "Snaps",
             "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git"],
             "description": "A dynamic and user-friendly photo sharing web application that allows users to upload, organize, and share their favorite moments. Users can post photos, tag them with relevant keywords, and leave comments to engage with the community. Designed with a focus on social interaction and visual storytelling, Snaps promotes creativity and connection.",
-            "img": "/src/assets/projects/Snaps.svg"
+            "img": "/projects/Snaps.svg"
         },
         {
             "title": "InStock",
             "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git", "Figma", "Jira"],
             "description": "A streamlined inventory management system designed to help businesses track inventory levels across multiple warehouses. It provides a centralized platform to monitor stock, manage products, and organize warehouse-specific inventory, ensuring accurate and efficient logistics operations.",
-            "img": "src/assets/projects/InStock.svg"
+            "img": "/projects/InStock.svg"
         },
         {
             "title": "BandSite",
             "tech": ["Javascript", "Scss", "HTML","Git"],
             "description": "A fully functional mockup website for the indie rock band Bees Knees, designed to connect with fans and promote their latest shows. The site features band information, tour dates, ticket purchasing options, and media content. With an aesthetic aligned with the band’s brand, it enhances their digital presence and audience engagement.",
-            "img": "src/assets/projects/BandSite.svg"
+            "img": "/projects/BandSite.svg"
         }
     ],
     "work": [
