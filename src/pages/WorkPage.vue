@@ -19,7 +19,7 @@ watchEffect(async()=>{
     <section>
         <h1>{{data?.title}}</h1>
         <h2>{{ data?.company }}</h2>
-        <p>{{ new Date(data?.start_date).getFullYear() }} - {{ new Date(data?.end_date).getFullYear() }}</p>
+        <p>{{ new Date(data?.start_date).getUTCFullYear() }} - {{ new Date(data?.end_date).getUTCFullYear() }}</p>
     </section>
     <section>
         <h2>Key Contributions</h2>

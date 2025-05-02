@@ -33,7 +33,8 @@
     "work": [
         {
             "id": 1,
-            "date": "2022–Present",
+            "start_date": "2022",
+            "end_date": "",
             "title": "E-commerce Specialist",
             "company": "Microserve",
             "description": "Design, build, and maintain custom e-commerce stores using the VarStreet CMS. Modernized store interfaces by implementing BEM methodology and SCSS for scalable styling, responsive multi-screen layouts, and interactive UI using JavaScript, transitions, and animations. Process customer orders, troubleshoot store issues, and document standard procedures to streamline internal workflows and improve overall efficiency.",

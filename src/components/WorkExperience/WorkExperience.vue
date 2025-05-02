@@ -40,7 +40,7 @@ watchEffect(async()=>{
         </div>
     </section>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 .view-all-link{
     font-weight: 600;
     &:hover{

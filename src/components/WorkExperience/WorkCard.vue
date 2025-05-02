@@ -7,7 +7,7 @@ const {title, description, tech, start_date, end_date, company} = props.data;
 <template>
 <div class="work-card">
     <div class="work-card__container">
-        <p class="work-date">{{ `${new Date(start_date).getFullYear()} - ${end_date ? new Date(end_date).getFullYear() : "present"}` }}</p>
+        <p class="work-date">{{ `${new Date(start_date).getUTCFullYear()} - ${end_date ? new Date(end_date).getUTCFullYear() : "present"}` }}</p>
         <div class="work-card__contents">
             <h3 class="text-title">{{title}} | {{ company }}</h3>
             <p class="text-description">{{ description }}</p>
