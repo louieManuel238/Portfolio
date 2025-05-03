@@ -13,7 +13,7 @@ import WorkExperience from '../components/WorkExperience/WorkExperience.vue';
 </section>
 </template>
 <style lang="scss">
-@import '../styles/partials/mixins';
+@use '../styles/partials/mixins' as *;
 .hero-section{
     height: 100%;
     width: 100%;

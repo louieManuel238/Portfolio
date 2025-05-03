@@ -23,8 +23,8 @@ const {title, description, tech, start_date, end_date, company} = props.data;
 
 </template>
 <style lang="scss" scoped>
-@import '../../styles/partials/mixins'; 
-@import '../../styles/partials/variables';
+@use '../../styles/partials/mixins' as *; 
+@use '../../styles/partials/variables' as *;
 .work-card{
     margin: .75rem 0;
     border-radius: 20px;
