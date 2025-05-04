@@ -30,6 +30,6 @@ watchEffect(async()=>{
 @use '../../styles/partials/variables.scss' as *;
 .profile-text{
     font-size: $text-sub-font;
-    color: $text-sub-color;
+    color: light-dark($text-light-sub-color ,$text-dark-sub-color);
 }
 </style>

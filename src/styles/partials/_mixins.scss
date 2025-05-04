@@ -20,8 +20,8 @@
     width: fit-content;
     padding: .15rem .50rem;
     border-radius: 10px;
-    color: #07cfda;
     font-weight: 700;
     font-size: 12px;
-    background: #00C2CB20; 
+    color: light-dark( $text-light-tag-color, $text-dark-tag-color);
+    background-color: light-dark($background-light-tag-color, $background-dark-tag-color); 
 }

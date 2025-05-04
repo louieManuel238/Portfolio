@@ -55,6 +55,7 @@ const submit = (e) => {
     </section>
 </template>
 <style lang="scss" scoped>
+@use '../../styles/partials/variables' as *;
 .contact{
     display: flex;
     flex-direction: column;
@@ -71,7 +72,7 @@ const submit = (e) => {
     }
     &__input{
         width: 100%;
-        background-color: #1B2F53;
+        background-color: $background-dark-input-color;
         border-radius: 5px;
         &--textarea{
             height: 8rem;

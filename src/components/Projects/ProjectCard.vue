@@ -1,4 +1,5 @@
 <script setup>
+import ArrowLink from '../Socials/ArrowLink.vue';
 const props = defineProps({
     data: Object
 })
@@ -8,7 +9,7 @@ const {title, description, tech, img} = props.data;
 <div class="project-card">
     <div class="project-card__container">
         <div class="project-card__contents">
-            <h3 class="text-title">{{title}}</h3>
+            <h3 class="text-title"><a class="project-card__title">{{title}} <ArrowLink/></a></h3>
             <p class="text-description">{{ description }}</p>
             <ul class="tech-list">
                 <li  v-for="tag in tech"
@@ -31,8 +32,8 @@ const {title, description, tech, img} = props.data;
     padding: .5rem;
     cursor: pointer;
     &:hover{
-            background: #BDC3C725;
-            color: #00C2CB;
+            background-color: $background-dark-hover-color;
+            color: $text-dark-hover-color;
         }
     &__contents{
         padding: .45rem;
@@ -58,7 +59,12 @@ const {title, description, tech, img} = props.data;
             flex-direction: row;
         }
     }
-    
+    &__title{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
 }
 .tech-list{
     display: flex;
@@ -73,6 +79,6 @@ const {title, description, tech, img} = props.data;
 }
 .text-description{
     font-size: $text-sub-font;
-    color: $text-sub-color;
+    color: light-dark(black,$text-dark-sub-color);
 }
 </style>
