@@ -40,17 +40,17 @@ const submit = (e) => {
         <Socials/>
         <form class="contact" @submit="handleSubmit">
             <label class="contact__label" for="full-name" :class="{focused: isFocusedName}">Full Name</label>
-            <input ref="inputName" class="contact__input" 
+            <input ref="inputName" class="contact__input" aria-label="input name" 
             type="text" id="full-name" name="name" v-model="form.name">
 
             <label class="contact__label" for="email-address" :class="{focused: isFocusedEmail}">Email</label>
-            <input ref="inputEmail" class="contact__input" 
+            <input ref="inputEmail" class="contact__input" aria-label="input email address"
             type="email" id="email-address" name="email" v-model="form.email" >
 
             <label class="contact__label" for="message" :class="{focused: isFocusedMessage}">Message</label>
-            <textarea ref="inputMessage" 
+            <textarea ref="inputMessage" aria-label="input massage" 
             class="contact__input contact__input--textarea" id="message" name="message" v-model="form.message"></textarea>
-            <button type="submit" class="button-regular" @click="submit">Send</button>
+            <button type="submit" class="button-regular" aria-label="submit message button" @click="submit">Send</button>
         </form>
     </section>
 </template>
@@ -86,6 +86,7 @@ const submit = (e) => {
     padding: .25rem 2rem;
     background-color: #1B2F53;
     border-radius: 10px;
+    width: 8rem;
     &:hover{
         font-weight: 800;
         transition: .25s;
@@ -96,4 +97,5 @@ const submit = (e) => {
     color: #00C2CB;
     font-weight: 600;
 }
+
 </style>

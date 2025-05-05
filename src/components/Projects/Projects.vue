@@ -29,7 +29,7 @@ watchEffect(async()=>{
                 <ProjectCard :data="project"/>
             </div>
         </div>
-        <RouterLink to="/" class="view-all-link">View All Projects</RouterLink>
+        <RouterLink to="/" class="view-all-link" >View All Projects</RouterLink>
     </section>
 
 </template>

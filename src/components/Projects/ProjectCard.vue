@@ -30,10 +30,12 @@ const {title, description, tech, img} = props.data;
     margin: .75rem 0;
     border-radius: 20px;
     padding: .5rem;
-    cursor: pointer;
     &:hover{
             background-color: $background-dark-hover-color;
             color: $text-dark-hover-color;
+            .arrow-link{
+                transform: translate(-0.25rem, -0.25rem);
+            }
         }
     &__contents{
         padding: .45rem;

@@ -12,15 +12,26 @@ const colorMode = useColorMode({
 </script>
 
 <template>
+  
+  <div class="theme-toggle">
+    <div>
+    <button>Toggle</button>
+  </div>
   <button @click="colorMode = 'dark'"><span>Dark</span></button>
   <button @click="colorMode = 'light'"><span>Light</span></button>
   <button @click="colorMode = 'dim'"><span>Dim</span></button>
   <button @click="colorMode = 'cafe'"><span>Cafe</span></button>
+  </div>
 </template>
 
 <style lang="scss">
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
+.theme-toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .dark{
   color: $text-dark-main-color;
   background-color: $background-dark-main-color;
@@ -47,6 +58,18 @@ const colorMode = useColorMode({
   }
   .work-date{
     color: $text-light-sub-color;
+  }
+  .button-regular{
+    background-color: #3b3939;
+  }
+  .focused{
+    color: $text-light-tag-color;
+    font-weight: 600;
+  }
+  .contact{
+    &__input{
+      color: $text-light-main-color;
+    }
   }
 }
 .dim{

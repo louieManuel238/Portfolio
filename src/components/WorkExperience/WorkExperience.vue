@@ -33,7 +33,9 @@ watchEffect(async()=>{
             </RouterLink>
             </div>
             <span>
-                <a href="/Manuel%20Louie%20Gayao%20_%20Web%20Developer.pdf" target="_blank" class="view-all-link">
+                <a href="/Manuel%20Louie%20Gayao%20_%20Web%20Developer.pdf" target="_blank" 
+                class="view-all-link"
+                aria-label="View Full Résumé (opens in a new tab)">
                     View Full Resume
                 </a>
             </span>
