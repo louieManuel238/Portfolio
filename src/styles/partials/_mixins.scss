@@ -25,3 +25,40 @@
     color: light-dark( $text-light-tag-color, $text-dark-tag-color);
     background-color: light-dark($background-light-tag-color, $background-dark-tag-color); 
 }
+
+@mixin lightTheme{
+    color: $text-light-main-color;
+    background-color:  $background-light-main-color;
+    .tech-list__tag {
+      color: $text-light-tag-color;
+      background-color: $background-light-tag-color;
+    }
+    .text-description, .profile-text{
+      color: $text-light-sub-color;
+    }
+    .project-card, .work-card{
+      &:hover{
+        color: $text-light-tag-color;
+      }
+    }
+    .contact{
+      &__input{
+        background-color: $background-light-input-color;
+      }
+    }
+    .work-date{
+      color: $text-light-sub-color;
+    }
+    .button-regular{
+      background-color: #3b3939;
+    }
+    .focused{
+      color: $text-light-tag-color;
+      font-weight: 600;
+    }
+    .contact{
+      &__input{
+        color: $text-light-main-color;
+      }
+    }
+}
