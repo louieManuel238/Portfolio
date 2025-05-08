@@ -7,7 +7,7 @@ const {title, description, tech, start_date, end_date, company} = props.data;
 <template>
 <div class="work-card">
     <div class="work-card__container">
-        <p class="work-date">{{ `${new Date(start_date).getFullYear()} - ${end_date ? new Date(end_date).getFullYear() : "present"}` }}</p>
+        <p class="work-date">{{ `${new Date(start_date).getUTCFullYear()} - ${end_date ? new Date(end_date).getUTCFullYear() : "present"}` }}</p>
         <div class="work-card__contents">
             <h3 class="text-title">{{title}} | {{ company }}</h3>
             <p class="text-description">{{ description }}</p>
@@ -23,8 +23,8 @@ const {title, description, tech, start_date, end_date, company} = props.data;
 
 </template>
 <style lang="scss" scoped>
-@import '../../styles/partials/mixins'; 
-@import '../../styles/partials/variables';
+@use '../../styles/partials/mixins' as *; 
+@use '../../styles/partials/variables' as *;
 .work-card{
     margin: .75rem 0;
     border-radius: 20px;
@@ -62,13 +62,10 @@ const {title, description, tech, start_date, end_date, company} = props.data;
 }
 .text-description{
     font-size: $text-sub-font;
-    color: $text-sub-color;
+    color: $text-dark-sub-color;
 }
 .work-date{
-    font-size: 12px;
-    color: $text-sub-color;
-    padding: 0 .45rem;
-    flex: 0 0 20%;
+    @include date;
     @include tablet{
         padding: .45rem;
     }

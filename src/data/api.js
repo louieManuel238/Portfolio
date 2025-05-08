@@ -31,13 +31,23 @@ class apiCaller{
     async getWorkExperienceByID(id){
         try{
             const response = await axios.get(`${this.BASE_URL}/works/1/${id}`);
-            console.log(response.data)
             return response.data;
         }catch(error){
             console.error("Error fetching user data:", error);
             const { work } = JSONdata;
             work.filter((jsonWorkID)=> id==jsonWorkID);
             return work[0];
+        }
+    }
+
+    async getProjects(){
+        try{
+            const response = await axios.get(`${this.BASE_URL}/projects/1`);
+            return response.data;
+        }catch(error){
+            console.error("Error fetching user data:", error);
+            const { projects } = JSONdata;
+            return projects;
         }
     }
 }

@@ -24,7 +24,7 @@ import Email from './Email.vue';
 </ul>
 </template>
 <style lang="scss" scoped>
-@import '../../styles/partials/mixins';
+@use '../../styles/partials/mixins' as *;
 .social-list{
     width: 100%;
     display: flex;

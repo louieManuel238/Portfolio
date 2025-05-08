@@ -18,7 +18,7 @@ const { width } = useWindowSize();
 </template>
 
 <style lang="scss" scoped>
-@import '../styles/partials/mixins';
+@use '../styles/partials/mixins' as *;
     .side-bar{
         display: flex;
         flex-direction: column;
