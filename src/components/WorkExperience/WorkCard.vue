@@ -65,10 +65,7 @@ const {title, description, tech, start_date, end_date, company} = props.data;
     color: $text-dark-sub-color;
 }
 .work-date{
-    font-size: 12px;
-    color: light-dark(black, $text-dark-sub-color);
-    padding: 0 .45rem;
-    flex: 0 0 20%;
+    @include date;
     @include tablet{
         padding: .45rem;
     }
