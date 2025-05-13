@@ -3,6 +3,7 @@ import { RouterLink } from 'vue-router';
 import {watchEffect, ref} from 'vue';
 import apiCaller from '../data/api';
 import github from '../components/Socials/GitHub.vue'
+import webIcon from '../components/Socials/Web.vue';
 // import projectList from '../data/projects.json';
 // const {projects} = projectList;
 const api = new apiCaller();
@@ -35,9 +36,9 @@ watchEffect(async()=>{
                                 <div v-for="item of project.tech" class="tech-list__tag">{{ item }}</div>
                             </td>
                             <td class="project-table__col">
-                                <div v-for="link of project.link">
-                                    <a v-if="link?.deployed" :href="link.deployed">Web</a>
-                                    <a v-if="link?.github" :href="link.github"><github class="icon"/></a>
+                                <div v-for="link of project.link" class="project-link--icons">
+                                    <a v-if="link?.deployed" :href="link.deployed" target="_blank" aria-label="Open Deployed Project (new tab)"><webIcon/></a>
+                                    <a v-if="link?.github" :href="link.github"  target="_blank" aria-label="Open Github Repository (new tab)"><github class="icon"/></a>
                                 </div>
                             </td>
                         </tr>
@@ -88,7 +89,9 @@ watchEffect(async()=>{
             display: none;
             @include large-mobile {
             display: table-cell;
-            padding: 0;
+            padding: 10px 0 0 0;
+          
+            width: fit-content;
             }
             @include desktop {
             display: table-cell;
@@ -122,5 +125,12 @@ watchEffect(async()=>{
 }
 .back-navigation__button{
     padding: 1rem;
+}
+.project-link{
+    &--icons{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
 }
 </style>

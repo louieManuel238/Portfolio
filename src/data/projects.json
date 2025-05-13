@@ -17,7 +17,7 @@
         "description": "A REST API ",
         "img": "/projects/CapstoneProject.svg",
         "link": [
-            {"deployed":"https://ashy-island-00473191e.6.azurestaticapps.net/",
+            {"deployed":"https://travelers-guide-backend.azurewebsites.net//",
             "github": "https://github.com/louieManuel238/Traveler-s-Guide-Backend"
             }],
         "year": "2025"
@@ -107,7 +107,8 @@
         "tech": ["vue.js", "SCSS", "Azure Apps"],
         "description": "",
         "img":"",
-        "link": [{"githib": "https://github.com/louieManuel238/Portfolio"}],
+        "link": [{"github": "https://github.com/louieManuel238/Portfolio",
+        "deployed": "https://kind-river-07638380f.6.azurestaticapps.net"}],
         "year": "2025"
     },
     {
