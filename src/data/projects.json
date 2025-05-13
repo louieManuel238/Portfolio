@@ -5,7 +5,21 @@
         "tech": ["React.js", "Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
         "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
         "img": "/projects/CapstoneProject.svg",
-        "link": "",
+        "link": [
+            {"deployed":"https://ashy-island-00473191e.6.azurestaticapps.net/",
+            "github": "https://github.com/louieManuel238/Traveler-s-Guide"
+            }],
+        "year": "2025"
+    },
+    {
+        "title": "Traveler's Guide Backend",
+        "tech": ["Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
+        "description": "A REST API ",
+        "img": "/projects/CapstoneProject.svg",
+        "link": [
+            {"deployed":"https://ashy-island-00473191e.6.azurestaticapps.net/",
+            "github": "https://github.com/louieManuel238/Traveler-s-Guide-Backend"
+            }],
         "year": "2025"
     },
     {
@@ -61,7 +75,7 @@
         "tech": ["React.js", "Bootstrap"],
         "description": "",
         "img":"",
-        "link": "",
+        "link": [{"github": "https://github.com/louieManuel238/COMIT-Project"}],
         "year": "2020"
     },
     {
@@ -93,7 +107,15 @@
         "tech": ["vue.js", "SCSS", "Azure Apps"],
         "description": "",
         "img":"",
-        "link": "",
+        "link": [{"githib": "https://github.com/louieManuel238/Portfolio"}],
+        "year": "2025"
+    },
+    {
+        "title": "Portfolio Backend",
+        "tech": ["Express.js", "MS SQL Server", "Azure Apps"],
+        "description": "REST API for my protfolio projects, work history, and about",
+        "img":"",
+        "link": [{"github": "https://github.com/louieManuel238/portfolio-backend"}],
         "year": "2025"
     }
 ]

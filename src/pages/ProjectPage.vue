@@ -1,7 +1,15 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-import projectList from '../data/projects.json';
-const {projects} = projectList;
+import {watchEffect, ref} from 'vue';
+import apiCaller from '../data/api';
+import github from '../components/Socials/GitHub.vue'
+// import projectList from '../data/projects.json';
+// const {projects} = projectList;
+const api = new apiCaller();
+const projects = ref();
+watchEffect(async()=>{
+    projects.value = await api.getProjectList();
+})
 
 </script>
 <template>
@@ -16,7 +24,7 @@ const {projects} = projectList;
                             <th class="project-table__col">Year</th>
                             <th class="project-table__col">Project</th>
                             <th class="project-table__col">Tech Stack</th>
-                            <th class="project-table__col">Link</th>
+                            <th class="project-table__col"></th>
                         </tr>
                     </thead>
                     <tbody class="project-table__body">
@@ -27,7 +35,10 @@ const {projects} = projectList;
                                 <div v-for="item of project.tech" class="tech-list__tag">{{ item }}</div>
                             </td>
                             <td class="project-table__col">
-                                <a href="{{project.link}}">Click here</a>
+                                <div v-for="link of project.link">
+                                    <a v-if="link?.deployed" :href="link.deployed">Web</a>
+                                    <a v-if="link?.github" :href="link.github"><github class="icon"/></a>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -39,7 +50,11 @@ const {projects} = projectList;
 <style lang="scss" scoped>
 @use '../styles/partials/mixins' as *;
 @use '../styles/partials/variables' as *;
+.hero-section{
+    width: 100%;
+    gap: 2rem;
 
+}
 .project-table{
     width: 100%;
     &__head{
@@ -50,7 +65,7 @@ const {projects} = projectList;
     }
     &__body{
        td{
-        padding: 10px 0 1.25rem 0;
+        padding: 10px 1.25rem 1.25rem 0;
        }
     }
     &__col{
@@ -73,6 +88,7 @@ const {projects} = projectList;
             display: none;
             @include large-mobile {
             display: table-cell;
+            padding: 0;
             }
             @include desktop {
             display: table-cell;

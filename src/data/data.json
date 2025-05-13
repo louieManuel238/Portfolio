@@ -33,7 +33,7 @@
     "work": [
         {
             "id": 1,
-            "start_date": "2022",
+            "start_date": "2022-01-01",
             "end_date": "",
             "title": "E-commerce Specialist",
             "company": "Microserve",
@@ -52,7 +52,8 @@
         },
         {
             "id": 2,
-            "date": "2022",
+            "start_date": "2022-01-01",
+            "end_date": "2022-01-01",
             "title": "Asset Recovery Technician",
             "company": "Microserve",
             "description": "Streamlined warehouse asset retirement and disposal workflows by developing VBA macros and Python scripts, automating data entry and reporting tasks. Applied 5S principles to reorganize workspace and reduce operational waste, resulting in a 70% increase in warehouse productivity. Ensured secure data destruction and proper documentation of decommissioned IT assets.",
@@ -69,7 +70,8 @@
         },
         {
             "id": 3,
-            "date": "2021",
+            "start_date": "2021-01-01",
+            "end_date": "2021-01-01",
             "title": "Developer Intern",
             "company": "unTribe",
             "description": "Developed an educational concentration game using React.js, where players match image pairs and answer dynamic quiz questions based on matched content. Integrated GraphQL with Apollo Client and Neo4J for managing and retrieving quiz data. Collaborated with a small team using Git for version control and contributed to UI/UX improvements and testing.",
@@ -88,7 +90,8 @@
         },
         {
             "id": 4,
-            "date": "2016–2017",
+            "start_date": "2016-01-01",
+            "end_date": "2017-01-01",
             "title": "Computer Programmer I",
             "company": "Local Government",
             "description": "Led end-to-end development of a full-stack Record Management System to digitize and manage internal documents and employee records. Built front-end forms using JSP and JavaScript, implemented backend logic in Java, and managed data using MySQL. Deployed and maintained the application on Windows Server 2013 with Apache HTTP Server.",
@@ -107,7 +110,8 @@
         },
         {
             "id": 5,
-            "date": "2018–2022",
+            "start_date": "2018-01-01",
+            "end_date": "2022-01-01",
             "title": "Technical Operator",
             "company": "LogiCan Technologies Inc.",
             "description": "Operated and monitored Surface Mount Technology (SMT) production lines for electronics manufacturing. Maintained IT hardware, conducted routine inspections, and managed materials inventory to ensure smooth production flow. Supported process improvement initiatives and helped troubleshoot equipment and network issues as part of the technical team.",

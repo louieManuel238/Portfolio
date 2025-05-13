@@ -40,11 +40,11 @@ const submit = (e) => {
         <Socials/>
         <form class="contact" @submit="handleSubmit">
             <label class="contact__label" for="full-name" :class="{focused: isFocusedName}">Full Name</label>
-            <input ref="inputName" class="contact__input" aria-label="input name" 
+            <input ref="inputName" class="contact__input" aria-label="input name" autocomplete="on"
             type="text" id="full-name" name="name" v-model="form.name">
 
             <label class="contact__label" for="email-address" :class="{focused: isFocusedEmail}">Email</label>
-            <input ref="inputEmail" class="contact__input" aria-label="input email address"
+            <input ref="inputEmail" class="contact__input" aria-label="input email address" autocomplete="on"
             type="email" id="email-address" name="email" v-model="form.email" >
 
             <label class="contact__label" for="message" :class="{focused: isFocusedMessage}">Message</label>
