@@ -3,41 +3,82 @@
     "last_name": "Gayao",
     "title": "Web Developer",
     "tagline": "I build impactful, user-friendly applications with modern, and thoughtful design.",
-    "about": "I am a versatile professional with 5+ years of cross-industry experience in e-commerce development, IT, manufacturing, and hospitality. I am passionate about leveraging technology to create impactful applications with modern designs that enhance user interaction and simplify user experience. Known for my creativity, problem-solving skills, and lifelong learning approach, I’m excited to contribute to developing cutting-edge, user-centric applications.",
+    "about": "I am a versatile professional with 5+ years of cross-industry experience in e-commerce development, IT, manufacturing, and hospitality. I am passionate about leveraging technology to create impactful applications with modern designs that enhance user interaction and simplify user experience. \n\n My technical toolkit includes working knowledge of various full-stack development platforms, including JavaScript frameworks (React, Vue.js, Node.js), Python with Django, Java, and ASP.NET. I have applied responsive design principles across projects to create seamless experiences across different devices. I have worked with SQL Server and MySQL database management systems to implement data structures that support efficient applications. \n\n I continually expand my technical skills through hands-on projects and dedicated learning. Known for my creativity, problem-solving skills, and lifelong learning approach, I am excited to contribute to developing cutting-edge, user-centric applications.",
     "projects": [
         {
+            "id": 1,
             "title": "Traveler's Guide",
-            "tech": ["React.js", "Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
+            "tech": [
+                "React.js",
+                "Express.js",
+                "GoogleAPI",
+                "GeminiAI",
+                "Git",
+                "Azure"
+            ],
             "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
-            "img": "/CapstoneProject.svg"
+            "img": "/projects/CapstoneProject.svg"
         },
         {
+            "id": 2,
             "title": "Snaps",
-            "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git"],
+            "tech": [
+                "React.js",
+                "Express.js",
+                "Javascript",
+                "HTML",
+                "Scss",
+                "Git"
+            ],
             "description": "A dynamic and user-friendly photo sharing web application that allows users to upload, organize, and share their favorite moments. Users can post photos, tag them with relevant keywords, and leave comments to engage with the community. Designed with a focus on social interaction and visual storytelling, Snaps promotes creativity and connection.",
-            "img": "/src/assets/projects/Snaps.svg"
+            "img": "/projects/Snaps.svg"
         },
         {
+            "id": 3,
             "title": "InStock",
-            "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git", "Figma", "Jira"],
+            "tech": [
+                "React.js",
+                "Express.js",
+                "Javascript",
+                "HTML",
+                "Scss",
+                "Git",
+                "Figma",
+                "Jira"
+            ],
             "description": "A streamlined inventory management system designed to help businesses track inventory levels across multiple warehouses. It provides a centralized platform to monitor stock, manage products, and organize warehouse-specific inventory, ensuring accurate and efficient logistics operations.",
-            "img": "src/assets/projects/InStock.svg"
+            "img": "/projects/InStock.svg"
         },
         {
+            "id": 4,
             "title": "BandSite",
-            "tech": ["Javascript", "Scss", "HTML","Git"],
+            "tech": [
+                "Javascript",
+                "Scss",
+                "HTML",
+                "Git"
+            ],
             "description": "A fully functional mockup website for the indie rock band Bees Knees, designed to connect with fans and promote their latest shows. The site features band information, tour dates, ticket purchasing options, and media content. With an aesthetic aligned with the band’s brand, it enhances their digital presence and audience engagement.",
-            "img": "src/assets/projects/BandSite.svg"
+            "img": "/projects/BandSite.svg"
         }
     ],
     "work": [
         {
             "id": 1,
-            "date": "2022–Present",
+            "start_date": "2022-01-01",
+            "end_date": "",
             "title": "E-commerce Specialist",
             "company": "Microserve",
             "description": "Design, build, and maintain custom e-commerce stores using the VarStreet CMS. Modernized store interfaces by implementing BEM methodology and SCSS for scalable styling, responsive multi-screen layouts, and interactive UI using JavaScript, transitions, and animations. Process customer orders, troubleshoot store issues, and document standard procedures to streamline internal workflows and improve overall efficiency.",
-            "tech": ["HTML", "CSS", "SCSS", "JavaScript", "BEM", "CMS", "BPM"],
+            "tech": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "JavaScript",
+                "BEM",
+                "CMS",
+                "BPM"
+            ],
             "keyResponsibilities": [
                 "Design, build, and maintain custom e-commerce stores using VarStreet CMS.",
                 "process requests from the customer experience team, and order management team in maintaining product catalogs and product availability ",
@@ -51,11 +92,18 @@
         },
         {
             "id": 2,
-            "date": "2022",
+            "start_date": "2022-01-01",
+            "end_date": "2022-01-01",
             "title": "Asset Recovery Technician",
             "company": "Microserve",
             "description": "Streamlined warehouse asset retirement and disposal workflows by developing VBA macros and Python scripts, automating data entry and reporting tasks. Applied 5S principles to reorganize workspace and reduce operational waste, resulting in a 70% increase in warehouse productivity. Ensured secure data destruction and proper documentation of decommissioned IT assets.",
-            "tech": ["VBA", "Python", "Excel", "5S", "Inventory Management"],
+            "tech": [
+                "VBA",
+                "Python",
+                "Excel",
+                "5S",
+                "Inventory Management"
+            ],
             "keyResponsibilities": [
                 "Manage asset retirement and disposal of client contract devices.",
                 "Ensure secure data destruction and proper documentation of decommissioned IT assets."
@@ -68,11 +116,19 @@
         },
         {
             "id": 3,
-            "date": "2021",
+            "start_date": "2021-01-01",
+            "end_date": "2021-01-01",
             "title": "Developer Intern",
             "company": "unTribe",
             "description": "Developed an educational concentration game using React.js, where players match image pairs and answer dynamic quiz questions based on matched content. Integrated GraphQL with Apollo Client and Neo4J for managing and retrieving quiz data. Collaborated with a small team using Git for version control and contributed to UI/UX improvements and testing.",
-            "tech": ["React.js", "JavaScript", "GraphQL", "Apollo", "Neo4J", "Git"],
+            "tech": [
+                "React.js",
+                "JavaScript",
+                "GraphQL",
+                "Apollo",
+                "Neo4J",
+                "Git"
+            ],
             "keyResponsibilities": [
                 "Develop an educational game using React.js.",
                 "Integrate GraphQL and Apollo Client with Neo4J for quiz data management.",
@@ -87,11 +143,19 @@
         },
         {
             "id": 4,
-            "date": "2016–2017",
+            "start_date": "2016-01-01",
+            "end_date": "2017-01-01",
             "title": "Computer Programmer I",
             "company": "Local Government",
             "description": "Led end-to-end development of a full-stack Record Management System to digitize and manage internal documents and employee records. Built front-end forms using JSP and JavaScript, implemented backend logic in Java, and managed data using MySQL. Deployed and maintained the application on Windows Server 2013 with Apache HTTP Server.",
-            "tech": ["Java", "JSP", "JavaScript", "MySQL", "Windows Server 2013", "Apache HTTP Server"],
+            "tech": [
+                "Java",
+                "JSP",
+                "JavaScript",
+                "MySQL",
+                "Windows Server 2013",
+                "Apache HTTP Server"
+            ],
             "keyResponsibilities": [
                 "Lead the development of a full-stack Record Management System.",
                 "Build front-end forms using JSP and JavaScript.",
@@ -106,11 +170,17 @@
         },
         {
             "id": 5,
-            "date": "2018–2022",
+            "start_date": "2018-01-01",
+            "end_date": "2022-01-01",
             "title": "Technical Operator",
             "company": "LogiCan Technologies Inc.",
             "description": "Operated and monitored Surface Mount Technology (SMT) production lines for electronics manufacturing. Maintained IT hardware, conducted routine inspections, and managed materials inventory to ensure smooth production flow. Supported process improvement initiatives and helped troubleshoot equipment and network issues as part of the technical team.",
-            "tech": ["SMT Equipment", "Inventory Management", "IT Support", "Hardware Maintenance"],
+            "tech": [
+                "SMT Equipment",
+                "Inventory Management",
+                "IT Support",
+                "Hardware Maintenance"
+            ],
             "keyResponsibilities": [
                 "Operate and monitor Surface Mount Technology (SMT) production lines.",
                 "Perform IT hardware maintenance and routine inspections.",
@@ -123,5 +193,5 @@
                 "Provided reliable technical support for hardware and network issues."
             ]
         }
-    ]    
+    ]
 }

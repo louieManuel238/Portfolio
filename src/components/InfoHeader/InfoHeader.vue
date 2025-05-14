@@ -22,7 +22,7 @@ watchEffect(async()=>{
 </template>
 
 <style lang="scss" scoped>
-@import '../../styles/partials/variables';
+@use '../../styles/partials/variables' as *;
 .personal-info{
   &__name{
     font-size: 2.25rem;
@@ -32,7 +32,7 @@ watchEffect(async()=>{
   }
   &__description{
     font-size: 1rem;
-    color: $text-sub-color;
+    color: light-dark(black,$text-dark-sub-color);
   }
 }
 </style>

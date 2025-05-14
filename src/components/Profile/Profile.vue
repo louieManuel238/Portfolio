@@ -27,9 +27,10 @@ watchEffect(async()=>{
     </section>
 </template>
 <style lang="scss" scoped>
-@import '../../styles/partials/variables.scss';
+@use '../../styles/partials/variables.scss' as *;
 .profile-text{
-    font-size: $text-sub-font;
-    color: $text-sub-color;
+    font-size: 1rem;
+    color: light-dark($text-light-sub-color ,$text-dark-sub-color);
+    white-space: pre-wrap;
 }
 </style>

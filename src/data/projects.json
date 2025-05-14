@@ -1,0 +1,123 @@
+{
+"projects": [
+    {
+        "title": "Traveler's Guide",
+        "tech": ["React.js", "Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
+        "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
+        "img": "/projects/CapstoneProject.svg",
+        "link": [
+            {"deployed":"https://ashy-island-00473191e.6.azurestaticapps.net/",
+            "github": "https://github.com/louieManuel238/Traveler-s-Guide"
+            }],
+        "year": "2025"
+    },
+    {
+        "title": "Traveler's Guide Backend",
+        "tech": ["Express.js","GoogleAPI", "GeminiAI", "Git", "Azure"],
+        "description": "A REST API ",
+        "img": "/projects/CapstoneProject.svg",
+        "link": [
+            {"deployed":"https://travelers-guide-backend.azurewebsites.net//",
+            "github": "https://github.com/louieManuel238/Traveler-s-Guide-Backend"
+            }],
+        "year": "2025"
+    },
+    {
+        "title": "Snaps",
+        "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git"],
+        "description": "A dynamic and user-friendly photo sharing web application that allows users to upload, organize, and share their favorite moments. Users can post photos, tag them with relevant keywords, and leave comments to engage with the community. Designed with a focus on social interaction and visual storytelling, Snaps promotes creativity and connection.",
+        "img": "/projects/Snaps.svg",
+        "link": "",
+        "year": "2025"
+    },
+    {
+        "title": "InStock",
+        "tech": ["React.js", "Express.js", "Javascript", "HTML", "Scss", "Git", "Figma", "Jira"],
+        "description": "A streamlined inventory management system designed to help businesses track inventory levels across multiple warehouses. It provides a centralized platform to monitor stock, manage products, and organize warehouse-specific inventory, ensuring accurate and efficient logistics operations.",
+        "img": "/projects/InStock.svg",
+        "link": "",
+        "year": "2025"
+    },
+    {
+        "title": "BandSite",
+        "tech": ["Javascript", "Scss", "HTML","Git"],
+        "description": "A fully functional mockup website for the indie rock band Bees Knees, designed to connect with fans and promote their latest shows. The site features band information, tour dates, ticket purchasing options, and media content. With an aesthetic aligned with the band’s brand, it enhances their digital presence and audience engagement.",
+        "img": "/projects/BandSite.svg",
+        "link": "",
+        "year": "2025"
+    },
+    {
+        "title": "Coffee Shop",
+        "tech": ["HTML, SCSS "],
+        "description": "A Website to advertise Coffee products",
+        "img":"",
+        "link": "",
+        "year": "2025"
+    },
+    {
+        "title": "Apple Education E-shop",
+        "tech": ["Varstreet Backoffice", "HTML", "Javascript", "CSS"],
+        "description": "Apple e commerce store for educational institution",
+        "img":"",
+        "link": "",
+        "year": "2025"
+    },
+    {
+        "title": "Ligislative Tracking and Record Management System",
+        "tech": ["Java", "JSP", "Javascript", "JQuery", "HTML", "CSS", "Apache tomcat", "MySQL", "FileServlet"],
+        "description": "The record management and tracking system was designed to improve file accessibility and maintenance for basic delivery of service; to keep track various legislative records, transactions and documents in aid of efficient legislations; and to modernize sessions. ",
+        "img":"",
+        "link": "",
+        "year": "2017"
+    },
+    {
+        "title": "E-Commerce clothing store",
+        "tech": ["React.js", "Bootstrap"],
+        "description": "",
+        "img":"",
+        "link": [{"github": "https://github.com/louieManuel238/COMIT-Project"}],
+        "year": "2020"
+    },
+    {
+        "title": "Personal Website v1",
+        "tech": ["Python", "Javascript", "Django", "SQL Server","HTML", "CSS", "Git" ],
+        "description": "",
+        "img":"",
+        "link": "",
+        "year": "2018"
+    },
+    {
+        "title": "Concentration Card game",
+        "tech": ["React.js", "Apollo", "GraphQL", "CSS", "Git", "Miro"],
+        "description": "",
+        "img":"",
+        "link": "",
+        "year": "2021"
+    },
+    {
+        "title": "AI aided To-Do App",
+        "tech": ["React.js","Express.js", "Javascript", "SCSS", "Git", "Figma", "Jira"],
+        "description": "A to-do application based on Microsoft to-do with Gemini AI integration, presented to Microsoft as a hackathon project in the issue of AI adoption of businesses and ethical AI use",
+        "img":"",
+        "link": "",
+        "year": "2025"
+    },
+    {
+        "title": "Personal Website v2",
+        "tech": ["vue.js", "SCSS", "Azure Apps"],
+        "description": "",
+        "img":"",
+        "link": [{"github": "https://github.com/louieManuel238/Portfolio",
+        "deployed": "https://kind-river-07638380f.6.azurestaticapps.net"}],
+        "year": "2025"
+    },
+    {
+        "title": "Portfolio Backend",
+        "tech": ["Express.js", "MS SQL Server", "Azure Apps"],
+        "description": "REST API for my protfolio projects, work history, and about",
+        "img":"",
+        "link": [{"github": "https://github.com/louieManuel238/portfolio-backend"}],
+        "year": "2025"
+    }
+]
+}
