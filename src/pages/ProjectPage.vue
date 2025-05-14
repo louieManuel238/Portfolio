@@ -1,12 +1,27 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import {watchEffect, ref} from 'vue';
+import { useHead, useSeoMeta } from '@unhead/vue'
 import apiCaller from '../data/api';
 import github from '../components/Socials/GitHub.vue'
 import webIcon from '../components/Socials/Web.vue';
 import ArrowBack from '../components/Socials/ArrowBack.vue';
 // import projectList from '../data/projects.json';
 // const {projects} = projectList;
+useHead({
+  title: 'Projects',
+  titleTemplate: '%s %separator %siteName',
+  templateParams: {
+    siteName: 'Louie Gayao'
+  }
+});
+useSeoMeta({
+  title: 'Projects',
+  description: 'List of Projects',
+   ogTitle: '%s',
+});
+
+
 const api = new apiCaller();
 const projects = ref();
 watchEffect(async()=>{

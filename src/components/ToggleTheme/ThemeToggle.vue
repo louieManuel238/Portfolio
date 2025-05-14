@@ -1,6 +1,11 @@
 <script setup>
 import {ref} from 'vue';
-import { useToggle, useColorMode } from '@vueuse/core'
+import { useToggle, useColorMode } from '@vueuse/core';
+import DarkToggle from '../Icons/DarkToggle.vue';
+import LightToggle from '../Icons/LightToggle.vue';
+import ContrastToggle from '../Icons/ContrastToggle.vue';
+import CafeToggle from '../Icons/CafeToggle.vue';
+
 const isOpenToggle = ref(false)
 const openToggle = useToggle(isOpenToggle);
 const colorMode = useColorMode({
@@ -14,18 +19,18 @@ const colorMode = useColorMode({
 <template>
   
   <div class="theme-toggle">
-    <button @click="openToggle()" class="theme-toggle__button">
-    <img v-if="colorMode === 'dark'" src="/icons/dark-toggle.svg" alt="Dark Mode Icon" class="theme-toggle__img" />
-    <img v-if="colorMode === 'light'" src="/icons/light-toggle.svg" alt="Light Mode Icon" class="theme-toggle__img" />
-    <img v-if="colorMode === 'cafe'" src="/icons/cafe-toggle.svg" alt="Cafe Mode Icon" class="theme-toggle__img" />
-    <img v-if="colorMode === 'contrast'" src="/icons/contrast-toggle.svg" alt="Contrast Mode Icon" class="theme-toggle__img" />
-    <span class="theme-toggle__button--text">{{ colorMode.toUpperCase() }}</span>
+    <button @click="openToggle()" class="theme-toggle__button" aria-label="Toggle to select theme">
+      <DarkToggle v-if="colorMode === 'dark'" class="theme-toggle__img" />
+      <LightToggle v-if="colorMode === 'light'" class="theme-toggle__img" />
+      <CafeToggle v-if="colorMode === 'cafe'"  class="theme-toggle__img" />
+      <ContrastToggle v-if="colorMode === 'contrast'" class="theme-toggle__img" />
+      <span class="theme-toggle__button--text">{{ colorMode.toUpperCase() }}</span>
     </button>
     <div v-if="isOpenToggle" class="theme-toggle__options">
-      <button @click="colorMode = 'dark'; openToggle()"><span>Dark</span></button>
-      <button @click="colorMode = 'light'; openToggle()"><span>Light</span></button>
-      <button @click="colorMode = 'contrast'; openToggle()"><span>Contrast</span></button>
-      <button @click="colorMode = 'cafe'; openToggle()"><span>Cafe</span></button>
+      <button @click="colorMode = 'dark'; openToggle()"><span class="theme-toggle__text">Dark</span></button>
+      <button @click="colorMode = 'light'; openToggle()"><span class="theme-toggle__text">Light</span></button>
+      <button @click="colorMode = 'contrast'; openToggle()"><span class="theme-toggle__text">Contrast</span></button>
+      <button @click="colorMode = 'cafe'; openToggle()"><span class="theme-toggle__text">Cafe</span></button>
     </div>
   </div>
 </template>
@@ -72,6 +77,7 @@ const colorMode = useColorMode({
   &__button{
     background-color: #b7bdc4;
   }
+ 
  }
 }
 .contrast{
