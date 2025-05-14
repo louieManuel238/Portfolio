@@ -28,9 +28,9 @@ watchEffect(async()=>{
         <div class="work-list">
             <div v-for="item in work"
             class="work-item">
-            <RouterLink :to="`/work/${item.id}`">
+            <!-- <RouterLink :to="`/work/${item.id}`"> -->
                 <WorkCard :data="item"/>
-            </RouterLink>
+            <!-- </RouterLink> -->
             </div>
             <span>
                 <a href="/Manuel%20Louie%20Gayao%20_%20Web%20Developer.pdf" target="_blank" 

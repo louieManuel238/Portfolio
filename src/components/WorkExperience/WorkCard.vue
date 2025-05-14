@@ -29,7 +29,6 @@ const {title, description, tech, start_date, end_date, company} = props.data;
     margin: .75rem 0;
     border-radius: 20px;
     padding: .5rem;
-    cursor: pointer;
     &:hover{
             background: #BDC3C725;
             color: #00C2CB;
