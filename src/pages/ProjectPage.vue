@@ -4,6 +4,7 @@ import {watchEffect, ref} from 'vue';
 import apiCaller from '../data/api';
 import github from '../components/Socials/GitHub.vue'
 import webIcon from '../components/Socials/Web.vue';
+import ArrowBack from '../components/Socials/ArrowBack.vue';
 // import projectList from '../data/projects.json';
 // const {projects} = projectList;
 const api = new apiCaller();
@@ -15,8 +16,13 @@ watchEffect(async()=>{
 </script>
 <template>
     <main>
-        <div class="back-navigation__button"><RouterLink to="/">Back</RouterLink></div>
+        
         <section class="hero-section">
+            <div class="back-navigation__button">
+                <RouterLink to="/">
+                    <ArrowBack/>
+                </RouterLink>
+            </div>
             <h1>All Projects</h1>
             <div>
                 <table class="project-table">

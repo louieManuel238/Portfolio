@@ -31,5 +31,6 @@ watchEffect(async()=>{
 .profile-text{
     font-size: 1rem;
     color: light-dark($text-light-sub-color ,$text-dark-sub-color);
+    white-space: pre-wrap;
 }
 </style>
