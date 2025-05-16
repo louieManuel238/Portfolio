@@ -55,7 +55,10 @@
       color: $text-light-sub-color;
     }
     .button-regular{
-      background-color: #3b3939;
+      background-color: #b7bdc4;
+      &:hover{
+        color:  $text-light-tag-color;
+      }
     }
     .focused{
       color: $text-light-tag-color;
