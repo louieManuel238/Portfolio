@@ -2,6 +2,7 @@
 import Socials from '../Socials/Socials.vue';
 import {ref, inject, watch, useTemplateRef} from 'vue';
 import { useFocus, useWindowScroll } from '@vueuse/core';
+import emailjs from '@emailjs/browser';
 
 const inputName = useTemplateRef('inputName')
 const inputEmail = useTemplateRef('inputEmail')
@@ -23,14 +24,27 @@ const form = ref({
     email:'',
     message:''
 })
+const sendStatus = ref(false);
 
-
-const submit = (e) => {
-    e.preventDefault();
-    
-    console.log(form.value.name)
-     
-}
+const sendEmail = () => {
+  emailjs
+    .send(import.meta.env.VITE_EMAIL_SERVICE, import.meta.env.VITE_EMAIL_TEMPLATE, 
+    {   name: form.value.name,
+        message: form.value.message,
+        email: form.value.email,
+    },
+    {
+      publicKey: import.meta.env.VITE_EMAIL_KEY,
+    })
+    .then(
+      () => {
+       sendStatus = true;
+      },
+      (error) => {
+        sendStatus = false;
+      },
+    );
+};
 </script>
 <template>
     <section class="contact-section" aria-label="Contact Me" id="contact-section" ref="contactRef">
@@ -38,7 +52,7 @@ const submit = (e) => {
             <h2>Connect With Me</h2>
         </div>
         <Socials/>
-        <form class="contact" @submit="handleSubmit">
+        <form class="contact" @submit.prevent="sendEmail">
             <label class="contact__label" for="full-name" :class="{focused: isFocusedName}">Full Name</label>
             <input ref="inputName" class="contact__input" aria-label="input name" autocomplete="on"
             type="text" id="full-name" name="name" v-model="form.name">
@@ -50,7 +64,7 @@ const submit = (e) => {
             <label class="contact__label" for="message" :class="{focused: isFocusedMessage}">Message</label>
             <textarea ref="inputMessage" aria-label="input massage" 
             class="contact__input contact__input--textarea" id="message" name="message" v-model="form.message"></textarea>
-            <button type="submit" class="button-regular" aria-label="submit message button" @click="submit">Send</button>
+            <button type="submit" class="button-regular" aria-label="submit message button">Send</button>
         </form>
     </section>
 </template>
