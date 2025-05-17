@@ -1,12 +1,13 @@
 <script setup>
 import {ref} from 'vue';
-import { useToggle, useColorMode } from '@vueuse/core';
+import { useToggle, useColorMode, useAnimate } from '@vueuse/core';
 import DarkToggle from '../Icons/DarkToggle.vue';
 import LightToggle from '../Icons/LightToggle.vue';
 import ContrastToggle from '../Icons/ContrastToggle.vue';
 import CafeToggle from '../Icons/CafeToggle.vue';
 
-const isOpenToggle = ref(false)
+
+const isOpenToggle = ref(false);
 const openToggle = useToggle(isOpenToggle);
 const colorMode = useColorMode({
   modes:{
@@ -26,12 +27,14 @@ const colorMode = useColorMode({
       <ContrastToggle v-if="colorMode === 'contrast'" class="theme-toggle__img" />
       <span class="theme-toggle__button--text">{{ colorMode.toUpperCase() }}</span>
     </button>
-    <div v-if="isOpenToggle" class="theme-toggle__options">
-      <button @click="colorMode = 'dark'; openToggle()"><span class="theme-toggle__text">Dark</span></button>
-      <button @click="colorMode = 'light'; openToggle()"><span class="theme-toggle__text">Light</span></button>
-      <button @click="colorMode = 'contrast'; openToggle()"><span class="theme-toggle__text">Contrast</span></button>
-      <button @click="colorMode = 'cafe'; openToggle()"><span class="theme-toggle__text">Cafe</span></button>
-    </div>
+    <Transition name="slide">
+      <div v-if="isOpenToggle" class="theme-toggle__options">
+        <button @click="colorMode = 'dark'; openToggle()"><span class="theme-toggle__text">Dark</span></button>
+        <button @click="colorMode = 'light'; openToggle()"><span class="theme-toggle__text">Light</span></button>
+        <button @click="colorMode = 'contrast'; openToggle()"><span class="theme-toggle__text">Contrast</span></button>
+        <button @click="colorMode = 'cafe'; openToggle()"><span class="theme-toggle__text">Cafe</span></button>
+      </div>  
+    </Transition>
   </div>
 </template>
 
@@ -94,5 +97,12 @@ const colorMode = useColorMode({
   }
  }
 }
-
+.slide-enter-from,
+.slide-leave-to{ 
+  transform: translateX(20px);
+  opacity: 0;}
+.slide-enter-active,
+.slide-leave-active{
+  transition: all .2s ease-out;
+}
 </style>

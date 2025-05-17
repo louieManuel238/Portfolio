@@ -9,11 +9,25 @@ import ArrowBack from '../components/Socials/ArrowBack.vue';
 // import projectList from '../data/projects.json';
 // const {projects} = projectList;
 useHead({
-  title: 'Projects',
-  titleTemplate: '%s %separator %siteName',
-  templateParams: {
-    siteName: 'Louie Gayao'
-  }
+    title: 'Projects',
+    titleTemplate: '%s %separator %siteName',
+    templateParams: {
+        siteName: 'Louie Gayao'
+    },
+    script: [
+    {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-R4YCPQ0027",
+        async: true
+    },
+    {
+        children: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R4YCPQ0027');
+        `
+    }
+    ]
 });
 useSeoMeta({
   title: 'Projects',
