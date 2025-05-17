@@ -6,6 +6,7 @@ import ThemeToggle from './components/ToggleTheme/ThemeToggle.vue';
 
 const visibleSection = ref('Profile');
 provide('visibleSection', visibleSection);
+
 </script>
 
 <template>
