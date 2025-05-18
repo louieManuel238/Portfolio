@@ -31,10 +31,10 @@ jobs:
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
-          env:
-            VITE_EMAIL_KEY: ${{ secrets.VITE_EMAIL_KEY }}
-            VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
-            VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
+        env:
+          VITE_EMAIL_KEY: ${{ secrets.VITE_EMAIL_KEY }}
+          VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
+          VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
