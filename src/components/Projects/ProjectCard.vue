@@ -81,6 +81,6 @@ const {title, description, tech, img} = props.data;
 }
 .text-description{
     font-size: $text-sub-font;
-    color: light-dark(black,$text-dark-sub-color);
+    color: $text-dark-sub-color;
 }
 </style>

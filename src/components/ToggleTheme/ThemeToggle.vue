@@ -49,6 +49,7 @@ const colorMode = useColorMode({
   background-color: #5f6c79;
   border-radius: 15px;
   height: 30px;
+ 
   
   &__button{
     display: flex;
