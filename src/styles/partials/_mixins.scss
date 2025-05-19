@@ -24,10 +24,13 @@
     font-size: 12px;
     color: light-dark( $text-light-tag-color, $text-dark-tag-color);
     background-color: light-dark($background-light-tag-color, $background-dark-tag-color); 
+    color:  $text-dark-tag-color;
+    background-color:  $background-dark-tag-color; 
+
 }
 @mixin date{
   font-size: 12px;
-    color: light-dark(black, $text-dark-sub-color);
+    color: $text-dark-sub-color;
     padding: 0 .45rem;
     flex: 0 0 20%;
 }

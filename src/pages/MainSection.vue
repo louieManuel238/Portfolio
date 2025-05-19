@@ -30,7 +30,7 @@ import WorkExperience from '../components/WorkExperience/WorkExperience.vue';
 .section-header{
     position: sticky;
     top: 0;
-    width: 100vw;
+    width: 100%;
     backdrop-filter: blur(20px);
     padding: 1rem;
     margin-left: -1rem;

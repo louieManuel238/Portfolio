@@ -32,7 +32,7 @@ watchEffect(async()=>{
   }
   &__description{
     font-size: 1rem;
-    color: light-dark(black,$text-dark-sub-color);
+    color: $text-dark-sub-color;
   }
 }
 </style>
