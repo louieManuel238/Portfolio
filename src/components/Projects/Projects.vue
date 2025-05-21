@@ -4,6 +4,7 @@ import {inject, watch, ref, watchEffect} from 'vue';
 import { useWindowScroll  } from '@vueuse/core';
 import { RouterLink } from 'vue-router';
 import apiCaller from '../../data/api';
+import ArrowForward from '../Socials/ArrowForward.vue';
 
 const visibleSection = inject('visibleSection')
 const { y } = useWindowScroll();
@@ -29,11 +30,20 @@ watchEffect(async()=>{
                 <ProjectCard :data="project"/>
             </div>
         </div>
-        <RouterLink to="/projects" class="view-all-link" >View All Projects</RouterLink>
+        <RouterLink to="/projects" class="view-all-link" >View All Projects  <ArrowForward/> </RouterLink>
     </section>
 
 </template>
 <style lang="scss" scoped>
+@use '../../styles/partials/mixins' as *;
+.view-all-link{
+@include viewAllLinkStyle;
+&:hover{
+        .arrow-forward{
+            transform: translateX(.45rem);
+        }
+    }
+}
 .project-list{
     display: flex;
     flex-direction: column;

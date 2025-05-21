@@ -34,6 +34,21 @@
     padding: 0 .45rem;
     flex: 0 0 20%;
 }
+@mixin linkStyle{
+ font-weight: 600;
+    &:hover{
+        color: $text-dark-tag-color;
+        transition: .25s 
+
+    }
+}
+@mixin viewAllLinkStyle{
+  @include linkStyle;
+  display: flex;
+    align-items: center;
+    gap: .25rem;
+    width: fit-content;
+}
 @mixin lightTheme{
     color: $text-light-main-color;
     background-color:  $background-light-main-color;
@@ -61,6 +76,11 @@
       background-color: #b7bdc4;
       &:hover{
         color:  $text-light-tag-color;
+      }
+    }
+    .view-all-link{
+      &:hover{
+        color: $text-light-tag-color;
       }
     }
     .focused{

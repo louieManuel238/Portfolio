@@ -5,6 +5,7 @@ import { inject, watch, watchEffect, ref} from 'vue';
 import { RouterLink } from 'vue-router';
 import { useWindowScroll } from '@vueuse/core';
 import apiCaller from '../../data/api';
+import ArrowForward from '../Socials/ArrowForward.vue';
 
 const visibleSection = inject('visibleSection')
 const {y} = useWindowScroll()
@@ -37,17 +38,20 @@ watchEffect(async()=>{
                 class="view-all-link"
                 aria-label="View Full Résumé (opens in a new tab)">
                     View Full Resume
+                    <ArrowForward/>
                 </a>
             </span>
         </div>
     </section>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../../styles/partials/mixins' as *;
 .view-all-link{
-    font-weight: 600;
-    &:hover{
-        color: #00C2CB;
-        transition: .25s 
+@include viewAllLinkStyle;
+&:hover{
+        .arrow-forward{
+            transform: translateX(.45rem);
+        }
     }
 }
 </style>
