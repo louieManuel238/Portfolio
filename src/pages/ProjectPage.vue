@@ -58,7 +58,7 @@ watchEffect(async()=>{
         
         <section class="hero-section">
             <div class="back-navigation__button">
-                <RouterLink to="/">
+                <RouterLink to="/" class="back-to-main">
                     <ArrowBack/>
                 </RouterLink>
             </div>
@@ -176,6 +176,14 @@ watchEffect(async()=>{
         width: 100%;
         display: flex;
         gap: 10px;
+    }
+}
+.back-to-main{
+    width: 100%;
+    &:hover{
+        .arrow-back{
+            transform: translateX(-0.25rem);
+        }
     }
 }
 </style>
