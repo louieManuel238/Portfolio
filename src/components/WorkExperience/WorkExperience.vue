@@ -1,8 +1,6 @@
 <script setup>
-import data from '../../data/data.json';
 import WorkCard from './WorkCard.vue';
 import { inject, watch, watchEffect, ref} from 'vue';
-import { RouterLink } from 'vue-router';
 import { useWindowScroll } from '@vueuse/core';
 import apiCaller from '../../data/api';
 import ArrowForward from '../Socials/ArrowForward.vue';

@@ -4,8 +4,8 @@ import MainSection from './MainSection.vue';
 import { useHead, useSeoMeta } from '@unhead/vue';
 
 useHead({
-  title: 'Web Developer',
-  titleTemplate: '%s %separator %siteName',
+  title: 'Web Developer  %separator Full-Stack',
+  titleTemplate: '%siteName %separator %s',
   templateParams: {
     siteName: 'Louie Gayao'
   },
