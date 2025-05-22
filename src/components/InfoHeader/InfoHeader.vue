@@ -13,9 +13,11 @@ watchEffect(async()=>{
 
 <template>
 <header class="personal-info" aria-label="Personal Infromation">
-  <h1 class="personal-info__name">
-    <RouterLink to="/">{{`${data?.first_name} ${data?.last_name}`}} </RouterLink>
-  </h1>
+  <RouterLink to="/">
+    <h1 class="personal-info__name">
+      {{`${data?.first_name} ${data?.last_name}`}}
+    </h1>
+  </RouterLink>
   <h2 class="personal-info__title text-title">{{  data?.title}}</h2>
   <p class="personal-info__description text-description">{{  data?.tagline}}</p>
 </header>

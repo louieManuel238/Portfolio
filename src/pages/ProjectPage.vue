@@ -6,6 +6,7 @@ import apiCaller from '../data/api';
 import github from '../components/Socials/GitHub.vue'
 import webIcon from '../components/Socials/Web.vue';
 import ArrowBack from '../components/Socials/ArrowBack.vue';
+import data from '../data/data.json';
 // import projectList from '../data/projects.json';
 // const {projects} = projectList;
 useHead({
@@ -45,11 +46,13 @@ useSeoMeta({
    ogTitle: '%s',
 });
 
-
 const api = new apiCaller();
 const projects = ref();
+const user = ref();
 watchEffect(async()=>{
     projects.value = await api.getProjectList();
+    user.value = await api.getUser();
+
 })
 
 </script>
@@ -59,7 +62,7 @@ watchEffect(async()=>{
         <section class="hero-section">
             <div class="back-navigation__button">
                 <RouterLink to="/" class="back-to-main">
-                    <ArrowBack/>
+                    <ArrowBack/> <h1> {{`${user?.first_name} ${user?.last_name}`}}</h1>
                 </RouterLink>
             </div>
             <h1>All Projects</h1>
@@ -180,6 +183,8 @@ watchEffect(async()=>{
 }
 .back-to-main{
     width: 100%;
+    display: flex;
+    gap: 1rem;
     &:hover{
         .arrow-back{
             transform: translateX(-0.25rem);
