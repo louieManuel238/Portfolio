@@ -43,4 +43,4 @@ The built files will be available in the `dist` directory.
 Feel free to reach out if you have any questions or feedback:
 - GitHub: [louieManuel238](https://github.com/louieManuel238)
 - Email: manuel.gayao@outlook.com
-- Portfolio: 
+- Portfolio: [louiegayao.ca](http://louiegayao.ca/)
