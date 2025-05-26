@@ -37,7 +37,11 @@ useHead({
         })(window,document,'script','dataLayer','GTM-MH3JKG43');
         `
     },
-    ]
+    ],
+    link: [{
+    rel: 'canonical',
+    href: 'https://louiegayao.ca/projects'
+    }]
 });
 
 useSeoMeta({

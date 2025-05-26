@@ -31,7 +31,11 @@ useHead({
         })(window,document,'script','dataLayer','GTM-MH3JKG43');
         `
     },
-  ]
+  ],
+  link: [{
+    rel: 'canonical',
+    href: 'https://louiegayao.ca'
+  }]
 });
 useSeoMeta({
   description: 'Louie Gayao Home Page, Web Developer, Full-Stack Developer',
