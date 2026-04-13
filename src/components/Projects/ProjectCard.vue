@@ -3,13 +3,13 @@ import ArrowLink from '../Socials/ArrowLink.vue';
 const props = defineProps({
     data: Object
 })
-const {title, description, tech, img} = props.data;
+const {title, description, tech, img, link} = props.data;
 </script>
 <template>
 <div class="project-card">
     <div class="project-card__container">
         <div class="project-card__contents">
-            <h3 class="text-title"><a class="project-card__title">{{title}} <ArrowLink/></a></h3>
+            <h3 class="text-title"><a :href="link" target="_blank" class="project-card__title">{{title}} <ArrowLink/></a></h3>
             <p class="text-description">{{ description }}</p>
             <ul class="tech-list">
                 <li  v-for="tag in tech"

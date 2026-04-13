@@ -17,7 +17,9 @@
                 "Azure"
             ],
             "description": "A comprehensive application designed to assist travellers in planning and managing their trips efficiently. The app generates an itinerary based on users' preferences and provides essential information about destinations, including attractions, accommodations, and local tips, ensuring a seamless travel experience.",
-            "img": "/projects/CapstoneProject.svg"
+            "img": "/projects/CapstoneProject.svg",
+            "link": "https://github.com/louieManuel238/Traveler-s-Guide"
+            
         },
         {
             "id": 2,
@@ -31,7 +33,8 @@
                 "Git"
             ],
             "description": "A dynamic and user-friendly photo sharing web application that allows users to upload, organize, and share their favorite moments. Users can post photos, tag them with relevant keywords, and leave comments to engage with the community. Designed with a focus on social interaction and visual storytelling, Snaps promotes creativity and connection.",
-            "img": "/projects/Snaps.svg"
+            "img": "/projects/Snaps.svg",
+            "link": ""
         },
         {
             "id": 3,
@@ -47,7 +50,8 @@
                 "Jira"
             ],
             "description": "A streamlined inventory management system designed to help businesses track inventory levels across multiple warehouses. It provides a centralized platform to monitor stock, manage products, and organize warehouse-specific inventory, ensuring accurate and efficient logistics operations.",
-            "img": "/projects/InStock.svg"
+            "img": "/projects/InStock.svg",
+            "link": ""
         },
         {
             "id": 4,
@@ -59,7 +63,8 @@
                 "Git"
             ],
             "description": "A fully functional mockup website for the indie rock band Bees Knees, designed to connect with fans and promote their latest shows. The site features band information, tour dates, ticket purchasing options, and media content. With an aesthetic aligned with the band’s brand, it enhances their digital presence and audience engagement.",
-            "img": "/projects/BandSite.svg"
+            "img": "/projects/BandSite.svg",
+            "link": ""
         }
     ],
     "work": [
